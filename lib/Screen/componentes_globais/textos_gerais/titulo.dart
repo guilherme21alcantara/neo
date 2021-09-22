@@ -3,18 +3,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class Titulo extends StatelessWidget {
+  final double h;
+  final double r;
   final String titulo;
-  const Titulo({this.titulo});
+  final double font;
+  final Color cor;
+  const Titulo({this.h,this.r ,this.titulo, this.font, this.cor});
+
   @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return Padding(
-      padding: EdgeInsets.only(top: size.height * 0.08),
+      padding: EdgeInsets.only(top: size.height * h, right: size.height*r),
       child: Text(
         titulo,
-        style: TextStyle(
-            fontSize: 26, fontWeight: FontWeight.bold, color: Colors.white),
+        style:
+            TextStyle(fontSize: font, fontWeight: FontWeight.bold, color: cor),
       ),
     );
   }

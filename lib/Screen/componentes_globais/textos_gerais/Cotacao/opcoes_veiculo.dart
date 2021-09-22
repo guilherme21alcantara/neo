@@ -1,5 +1,7 @@
 abstract class OPCOESVEICULO {
   //titulo
+  static const TITULO = 'Bem-Vindo!';
+  //contexto
   static const CORPO =
       'Selecione uma ou mais opções em como você usa o seu veículo';
 
