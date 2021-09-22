@@ -1,6 +1,6 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_carrosel/imagens_carrosel.dart';
+import 'package:neo/Screen/componentes_globais/imagens.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_cotacao.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 
@@ -21,7 +21,7 @@ class _CotarCadastroState extends State<CotarCadastro> {
       (
         child: Column(children: 
         [
-           RotasImagensCarrosel(image: AssetImage(RoutesImagensCotacao.CADASTRO)),
+           RotasImagens(h: 0.35 ,image: AssetImage(RoutesImagensCotacao.CADASTRO,)),
         ],),
       ),
     );

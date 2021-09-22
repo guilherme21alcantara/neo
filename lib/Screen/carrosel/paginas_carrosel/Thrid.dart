@@ -5,7 +5,7 @@ import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_cotar.
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_entrar.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_selecionado.dart';
-import 'package:neo/Screen/componentes_globais/componentes_carrosel/imagens_carrosel.dart';
+import 'package:neo/Screen/componentes_globais/imagens.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/texto_inicio.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/titulo.dart';
 import 'package:neo/Screen/componentes_globais/cores.dart';
@@ -27,7 +27,7 @@ class _ThridCarroselState extends State<ThridCarrosel> {
     return Scaffold(
       body: Column(
         children: [
-          RotasImagensCarrosel(image: AssetImage(RoutesImagens.THRIDIMAGE)),
+          RotasImagens(h: 0.5,image: AssetImage(RoutesImagens.THRIDIMAGE)),
           Expanded(
               child: Container(
             height: size.height * 0.3,

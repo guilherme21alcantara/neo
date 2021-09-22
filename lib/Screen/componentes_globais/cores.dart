@@ -1,3 +1,4 @@
+//@dart=2.9
 import 'package:hexcolor/hexcolor.dart';
 
 class AppCores {
