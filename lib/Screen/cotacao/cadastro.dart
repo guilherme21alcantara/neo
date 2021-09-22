@@ -1,5 +1,6 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
+import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 
 class CotarCadastro extends StatefulWidget {
   const CotarCadastro({ Key key }) : super(key: key);
@@ -13,13 +14,6 @@ class _CotarCadastroState extends State<CotarCadastro> {
   Widget build(BuildContext context) {
       var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return Scaffold
-    (
-      appBar: AppBar(
-        toolbarHeight: size.height * 0.15,
-        leading: Icon(Icons.arrow_back, size: 30),
-        centerTitle: true,
-      ),
-    );
+    return ScaffoldPrincipal();
   }
 }
