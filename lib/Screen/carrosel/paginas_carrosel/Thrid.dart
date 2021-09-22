@@ -1,14 +1,24 @@
+//@dart=2.9
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_cotar.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_entrar.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_selecionado.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/imagens_carrosel.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/texto_inicio.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/titulo.dart';
+import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/Screen/componentes_globais/textos_gerais/textos.dart';
 
-class Thrid extends StatefulWidget {
-  const Thrid({Key? key}) : super(key: key);
+class ThridCarrosel extends StatefulWidget {
+  const ThridCarrosel({Key key}) : super(key: key);
 
   @override
-  _ThridState createState() => _ThridState();
+  _ThridCarroselState createState() => _ThridCarroselState();
 }
 
-class _ThridState extends State<Thrid> {
+class _ThridCarroselState extends State<ThridCarrosel> {
   @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
@@ -16,14 +26,7 @@ class _ThridState extends State<Thrid> {
     return Scaffold(
       body: Column(
         children: [
-          Container(
-            height: size.height * 0.5,
-            width: size.width,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('assets/carrosel3.png'), fit: BoxFit.contain),
-            ),
-          ),
+          RotasImagensCarrosel(image: AssetImage(RoutesImagens.THRIDIMAGE)),
           Expanded(
               child: Container(
             height: size.height * 0.3,
@@ -36,65 +39,10 @@ class _ThridState extends State<Thrid> {
                 color: HexColor('#7f47fa')),
             child: Column(
               children: [
-                Padding(
-                  padding: EdgeInsets.only(top: size.height * 0.08),
-                  child: Text(
-                    'Pagamento Mensal',
-                    style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: size.height * 0.02),
-                  child: Container(
-                    height: size.height * 0.105,
-                    width: size.width * 0.9,
-                    child: Text(
-                      'Aqui você tem total flexibilidade e faz seu pagamento de forma mensal podendo cancelar a qualquer momento e sem custo adicional',
-                      style: TextStyle(fontSize: 18, color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: size.height * 0.04),
-                  child: Container(
-                      height: size.height * 0.05,
-                      width: size.width * 0.7,
-                      child: ElevatedButton(
-                        style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStateProperty.all<Color?>(Colors.white),
-                            shape: MaterialStateProperty.all<
-                                RoundedRectangleBorder>(RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30),
-                            ))),
-                        child: Text(
-                          'Cotar Seguro',
-                          style: TextStyle(
-                              fontSize: 18, color: HexColor('#7f47fa')),
-                        ),
-                        onPressed: () {},
-                      )),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: size.height * 0.03),
-                  child: Container(
-                    height: size.height * 0.05,
-                    width: size.width * 0.7,
-                    child: TextButton(
-                        child: Text(
-                          'Já possui uma conta? Entrar !',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.white,
-                              decoration: TextDecoration.underline),
-                        ),
-                        onPressed: () {}),
-                  ),
-                ),
+                Titulo(titulo: STRING.THRIDTITULO),
+                TextoInicio(texto: STRING.TEXTOTHRID),
+                BotaoCotar(texto: STRING.BOTAO),
+                BotaoEntrar(texto: STRING.BOTAOENTRAR),
                 Padding(
                   padding: EdgeInsets.only(top: size.height * 0.02),
                   child: Container(
@@ -102,34 +50,12 @@ class _ThridState extends State<Thrid> {
                     width: size.width * 0.4,
                     child: Row(
                       children: [
-                         Container(
-                          height: size.height * 0.025,
-                          width: size.width * 0.05,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(30)),
-                        ),
-                        
-                        SizedBox(
-                          width: size.width * 0.05,
-                        ),
-                        Container(
-                          height: size.height * 0.025,
-                          width: size.width * 0.05,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(30)),
-                        ),
-                        SizedBox(
-                          width: size.width * 0.05,
-                        ),
-                        Container(
-                          height: size.height * 0.025,
-                          width: size.width * 0.15,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(30)),
-                        ),
+                        SizedBox(width: size.width * 0.02),
+                        ContainerNaoSelect(),
+                        SizedBox(width: size.width * 0.05),
+                        ContainerNaoSelect(),
+                        SizedBox(width: size.width * 0.05),
+                        ContainerSelect(),
                       ],
                     ),
                   ),

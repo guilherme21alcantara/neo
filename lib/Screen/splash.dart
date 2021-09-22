@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/carrosel.dart';
-
+import 'package:neo/Screen/carrosel/carrosel.dart';
 
 class splash extends StatefulWidget {
   @override
@@ -14,14 +13,17 @@ class _splashState extends State<splash> {
     super.initState();
     Timer(
         Duration(seconds: 3),
-        () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (BuildContext context) => HomePage())));
+        () => Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (BuildContext context) => HomePage())));
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: Image.asset('assets/bg.png', fit: BoxFit.cover,),
-      );
+      child: Image.asset(
+        'assets/bg.png',
+        fit: BoxFit.cover,
+      ),
+    );
   }
 }

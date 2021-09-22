@@ -1,3 +1,4 @@
+//@dart=2.9
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/carrosel/paginas_carrosel/FirstCarrosel.dart';
@@ -11,7 +12,7 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           CarouselSlider(
-            items: [HomeScreen(), Second(), Thrid()],
+            items: [FirstCarrosel(), SecondCarrosel(), ThridCarrosel()],
             options: CarouselOptions(
               height: 874.0,
               enlargeCenterPage: true,

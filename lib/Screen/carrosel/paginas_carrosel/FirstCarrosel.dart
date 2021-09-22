@@ -1,15 +1,24 @@
+//@dart=2.9
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:neo/Screen/componentes_globais.dart/textos_gerais.dart/textos.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_cotar.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_entrar.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_selecionado.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/imagens_carrosel.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/texto_inicio.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/titulo.dart';
+import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/Screen/componentes_globais/textos_gerais/textos.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class FirstCarrosel extends StatefulWidget {
+  const FirstCarrosel({Key key}) : super(key: key);
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _FirstCarroselState createState() => _FirstCarroselState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _FirstCarroselState extends State<FirstCarrosel> {
   @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
@@ -17,19 +26,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Column(
         children: [
-          Container(
-            height: size.height * 0.5,
-            width: size.width,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('assets/carrosel1.png'), fit: BoxFit.contain),
-            ),
-          ),
+          RotasImagensCarrosel(image: AssetImage(RoutesImagens.FIRSTIMAGE)),
           Expanded(
               child: Container(
-              height: size.height * 0.3,
-              width: size.width,
-              decoration: BoxDecoration(
+            height: size.height * 0.3,
+            width: size.width,
+            decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40),
                   topRight: Radius.circular(40),
@@ -37,65 +39,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 color: HexColor('#7f47fa')),
             child: Column(
               children: [
-                Padding(
-                  padding: EdgeInsets.only(top: size.height * 0.08),
-                  child: Text(
-                    STRING.CADASTRO,
-                    style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: size.height * 0.02),
-                  child: Container(
-                    height: size.height * 0.105,
-                    width: size.width * 0.9,
-                    child: Text(
-                      'A primeira Seguradora Digital que protege seu veículo de forma completa, sem burocracia e com balores que cabem no seu bolso!',
-                      style: TextStyle(fontSize: 18, color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: size.height * 0.04),
-                  child: Container(
-                      height: size.height * 0.05,
-                      width: size.width * 0.7,
-                      child: ElevatedButton(
-                        style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStateProperty.all<Color?>(Colors.white),
-                            shape: MaterialStateProperty.all<
-                                RoundedRectangleBorder>(RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30),
-                            ))),
-                        child: Text(
-                          'Cotar Seguro',
-                          style: TextStyle(
-                              fontSize: 18, color: HexColor('#7f47fa')),
-                        ),
-                        onPressed: () {},
-                      )),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: size.height * 0.03),
-                  child: Container(
-                    height: size.height * 0.05,
-                    width: size.width * 0.7,
-                    child: TextButton(
-                        child: Text(
-                          'Já possui uma conta? Entrar !',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.white,
-                              decoration: TextDecoration.underline),
-                        ),
-                        onPressed: () {}),
-                  ),
-                ),
+                Titulo(titulo: STRING.INICIO),
+                TextoInicio(texto: STRING.TEXTOINICIO),
+                BotaoCotar(texto: STRING.BOTAO),
+                BotaoEntrar(texto: STRING.BOTAOENTRAR),
                 Padding(
                   padding: EdgeInsets.only(top: size.height * 0.02),
                   child: Container(
@@ -103,33 +50,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: size.width * 0.4,
                     child: Row(
                       children: [
-                        Container(
-                          height: size.height * 0.025,
-                          width: size.width * 0.15,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(30)),
-                        ),
-                        SizedBox(
-                          width: size.width * 0.05,
-                        ),
-                        Container(
-                          height: size.height * 0.025,
-                          width: size.width * 0.05,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(30)),
-                        ),
-                        SizedBox(
-                          width: size.width * 0.05,
-                        ),
-                        Container(
-                          height: size.height * 0.025,
-                          width: size.width * 0.05,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(30)),
-                        ),
+                        SizedBox(width: size.width * 0.02),
+                        ContainerSelect(),
+                        SizedBox(width: size.width * 0.05),
+                        ContainerNaoSelect(),
+                        SizedBox(width: size.width * 0.05),
+                        ContainerNaoSelect(),
                       ],
                     ),
                   ),
