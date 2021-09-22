@@ -8,6 +8,6 @@ import 'package:neo/Screen/splash.dart';
 
 class AppPages {
   static final routes = [
-    GetPage(name: Routes.INITIAL, page: () => CotarCadastro())
+    GetPage(name: Routes.INITIAL, page: () => InformeCEPTrabalho())
   ];
 }
