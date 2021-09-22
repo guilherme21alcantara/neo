@@ -4,7 +4,8 @@ import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
 import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 import 'package:neo/Screen/componentes_globais/textos_gerais/Cotacao/informe_cep.dart';
-import 'package:neo/Screen/componentes_globais/textos_gerais/Cotacao/header.dart';
+import 'package:neo/Screen/componentes_globais/textos_header_componentes/header.dart';
+
 
 class InformeCEPTrabalho extends StatefulWidget {
   const InformeCEPTrabalho({Key? key}) : super(key: key);
@@ -34,7 +35,27 @@ class _InformeCEPTrabalhoState extends State<InformeCEPTrabalho> {
                 children: [
                   Column(
                     children: [
-                      _cepField(size),
+                      MainHeader(
+                          paddingLados: size.width * 0.2,
+                          size: size,
+                          text: INFORMECEP.TRABALHO),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: size.width * 0.05,
+                            vertical: size.height * 0.01),
+                        child: Container(
+                            color: AppCores.BRANCO,
+                            child: Column(
+                              children: [
+                                InputTexto(size: size, text: 'CEP'),
+                                CustomTextButton(
+                                    textoComum: 'Não sabe o CEP?',
+                                    textoClicavel: 'Aqui !',
+                                    function: () {},
+                                    size: size)
+                              ],
+                            )),
+                      )
                     ],
                   )
                 ],
@@ -44,34 +65,5 @@ class _InformeCEPTrabalhoState extends State<InformeCEPTrabalho> {
         ],
       ),
     );
-  }
-
-  Widget _cepField(Size size) {
-    return Column(children: [
-      MainHeader(
-          paddingLados: size.width * 0.2,
-          size: size,
-          text: INFORMECEP.TRABALHO),
-      Padding(
-        padding: EdgeInsets.symmetric(
-            horizontal: size.width * 0.05, vertical: size.height * 0.01),
-        child: Container(
-            color: AppCores.BRANCO,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                InputTexto(size: size, text: INFORMECEP.CEP),
-                CustomTextButton(
-                    textoComum: INFORMECEP.NAOSABECEP,
-                    textoClicavel: INFORMECEP.AQUI,
-                    function: () {},
-                    size: size),
-                SizedBox(
-                  height: size.height * 0.01,
-                )
-              ],
-            )),
-      )
-    ]);
   }
 }
