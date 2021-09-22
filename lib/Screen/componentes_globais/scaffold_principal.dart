@@ -13,7 +13,7 @@ class ScaffoldPrincipal extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppCores.BACKGROUND,
       appBar: AppBar(
-        toolbarHeight: size.height * 0.07,
+        toolbarHeight: size.height * 0.08,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(10),
@@ -22,7 +22,7 @@ class ScaffoldPrincipal extends StatelessWidget {
         centerTitle: true,
         title: Text(
           STRING.COTACAO,
-          style: TextStyle(color: AppCores.PRETO),
+          style: TextStyle(color: AppCores.PRETO, fontWeight: FontWeight.w800),
         ),
         backgroundColor: AppCores.BRANCO,
         leading: BackButton(
