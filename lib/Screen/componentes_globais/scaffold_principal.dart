@@ -13,7 +13,7 @@ class ScaffoldPrincipal extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppCores.BACKGROUND,
       appBar: AppBar(
-        toolbarHeight: size.height * 0.15,
+        toolbarHeight: size.height * 0.07,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(10),
@@ -29,6 +29,7 @@ class ScaffoldPrincipal extends StatelessWidget {
           color: AppCores.PRETO,
         ),
       ),
+      body: conteudo,
     );
   }
 }
