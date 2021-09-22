@@ -1,5 +1,7 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
+import 'package:neo/Screen/componentes_globais/componentes_carrosel/imagens_carrosel.dart';
+import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_cotacao.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 
 class CotarCadastro extends StatefulWidget {
@@ -15,7 +17,13 @@ class _CotarCadastroState extends State<CotarCadastro> {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-      conteudo: Container(),
+      conteudo: Container
+      (
+        child: Column(children: 
+        [
+           RotasImagensCarrosel(image: AssetImage(RoutesImagensCotacao.CADASTRO)),
+        ],),
+      ),
     );
   }
 }
