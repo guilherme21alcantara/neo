@@ -19,4 +19,9 @@ abstract class STRING {
   //Cotação
   static const INFORMECEPPERNOITA =
       'Me informa o CEP onde o seu veículo pernoita';
+
+  static const SELECIONEOPCOESUSOVEICULO =
+      'Selecione uma ou mais opções em como você usa o seu veículo';
+
+  static const COTACAO = 'Cotação';
 }
