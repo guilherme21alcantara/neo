@@ -9,9 +9,9 @@ import 'package:neo/Screen/componentes_globais/imagens.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/texto_inicio.dart';
 import 'package:neo/Screen/componentes_globais/cores.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
-import 'package:neo/Screen/componentes_globais/textos_gerais/strings.dart';
-import 'package:neo/Screen/componentes_globais/textos_gerais/titulo.dart';
-import 'package:neo/Screen/componentes_globais/textos_gerais/titulos/titulos.dart';
+import 'package:neo/Screen/componentes_globais/textos_header_componentes/titulo.dart';
+import 'package:neo/Screen/textp_globais/textos_gerais/strings.dart';
+import 'package:neo/Screen/textp_globais/textos_gerais/titulos/titulos.dart';
 
 class FirstCarrosel extends StatefulWidget {
   const FirstCarrosel({Key key}) : super(key: key);

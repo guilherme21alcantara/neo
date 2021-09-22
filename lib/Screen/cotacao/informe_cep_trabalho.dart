@@ -3,8 +3,8 @@ import 'package:neo/Screen/componentes_globais/cores.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
 import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
-import 'package:neo/Screen/componentes_globais/textos_gerais/Cotacao/informe_cep.dart';
 import 'package:neo/Screen/componentes_globais/textos_header_componentes/header.dart';
+import 'package:neo/Screen/textp_globais/textos_gerais/Cotacao/informe_cep.dart';
 
 
 class InformeCEPTrabalho extends StatefulWidget {
