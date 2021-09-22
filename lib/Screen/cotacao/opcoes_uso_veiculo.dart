@@ -11,6 +11,8 @@ class OpcoesUsoVeiculo extends StatefulWidget {
 class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
   @override
   Widget build(BuildContext context) {
-    return ScaffoldPrincipal();
+    return ScaffoldPrincipal(
+      conteudo: Container(),
+    );
   }
 }

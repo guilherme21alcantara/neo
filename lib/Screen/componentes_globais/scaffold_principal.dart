@@ -3,7 +3,8 @@ import 'package:neo/Screen/componentes_globais/cores.dart';
 import 'package:neo/Screen/componentes_globais/textos_gerais/textos.dart';
 
 class ScaffoldPrincipal extends StatelessWidget {
-  const ScaffoldPrincipal({Key? key}) : super(key: key);
+  final Widget conteudo;
+  const ScaffoldPrincipal({Key? key, required this.conteudo}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +26,7 @@ class ScaffoldPrincipal extends StatelessWidget {
           color: AppCores.PRETO,
         ),
       ),
+      body: conteudo,
     );
   }
 }
