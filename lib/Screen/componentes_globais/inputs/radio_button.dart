@@ -21,14 +21,24 @@ class CustomRadioButton extends StatefulWidget {
 }
 
 class _CustomRadioButtonState extends State<CustomRadioButton> {
+  bool isBorderVisible = false;
+
+  _getColor(bool b) {
+    if (b) {
+      return AppCores.PRETO;
+    }
+    return AppCores.BRANCO;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-          vertical: widget.size.width * 0.03,
+          vertical: widget.size.width * 0.02,
           horizontal: widget.size.width * 0.05),
       child: Container(
         decoration: BoxDecoration(
+            border: Border.all(color: _getColor(isBorderVisible)),
             color: AppCores.BRANCO,
             borderRadius: BorderRadius.all(Radius.circular(10))),
         child: Row(

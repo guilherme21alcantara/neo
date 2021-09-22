@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/cores.dart';
 import 'package:neo/Screen/componentes_globais/inputs/radio_button.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 import 'package:neo/Screen/componentes_globais/textos_gerais/Cotacao/opcoes_veiculo.dart';
+import 'package:neo/Screen/cotacao/header.dart';
 
 class OpcoesUsoVeiculo extends StatefulWidget {
   const OpcoesUsoVeiculo({Key? key}) : super(key: key);
@@ -12,6 +12,8 @@ class OpcoesUsoVeiculo extends StatefulWidget {
 }
 
 class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
+  int selectedValue = 0;
+
   @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
@@ -27,48 +29,26 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
       width: size.width,
       child: Column(
         children: [
-          Padding(
-            padding: EdgeInsets.only(
-                right: size.width * 0.05,
-                left: size.width * 0.05,
-                top: size.height * 0.02,
-                bottom: size.height * 0.01),
-            child: Text(
-              OPCOESVEICULO.CORPO,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: AppCores.ROXOPRINCIPAL,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
+          MainHeader(
+            size: size,
+            text: OPCOESVEICULO.CORPO,
           ),
-          Container(
-            height: size.height * 0.7,
-            width: size.width,
-            child: CustomScrollView(
-              slivers: <Widget>[
-                SliverList(
-                  delegate: SliverChildListDelegate(List.generate(
-                    1,
-                    (i) => Column(
-                      children: [
-                        Column(children: [
-                          CustomRadioButton(
-                              value: 1,
-                              groupValue: 1,
-                              onChanged: (value2) {
-                                setState(() {});
-                              },
-                              size: size,
-                              text: 'asdasdasd')
-                        ]),
-                      ],
-                    ),
-                  ).toList()),
-                ),
-              ],
-            ),
-          ),
+          CustomRadioButton(
+              value: 1,
+              groupValue: selectedValue,
+              onChanged: (value2) {
+                setState(() {});
+              },
+              size: size,
+              text: 'asdasdasd'),
+          CustomRadioButton(
+              value: 2,
+              groupValue: selectedValue,
+              onChanged: (value2) {
+                setState(() {});
+              },
+              size: size,
+              text: 'asdasdasd'),
         ],
       ),
     );
