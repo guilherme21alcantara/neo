@@ -8,6 +8,7 @@ import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_se
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/imagens_carrosel.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/texto_inicio.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/titulo.dart';
+import 'package:neo/Screen/componentes_globais/cores.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
 import 'package:neo/Screen/componentes_globais/textos_gerais/textos.dart';
 
@@ -36,7 +37,7 @@ class _SecondCarroselState extends State<SecondCarrosel> {
                   topLeft: Radius.circular(40),
                   topRight: Radius.circular(40),
                 ),
-                color: HexColor('#7f47fa')),
+                color: AppCores.ROXOPRINCIPAL),
             child: Column(
               children: [
                 Titulo(titulo: STRING.SECONDTITULO),
