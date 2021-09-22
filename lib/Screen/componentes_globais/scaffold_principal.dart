@@ -13,26 +13,22 @@ class ScaffoldPrincipal extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppCores.BACKGROUND,
       appBar: AppBar(
-          toolbarHeight: size.height * 0.15,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(
-              bottom: Radius.circular(10),
-            ),
+        toolbarHeight: size.height * 0.15,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(10),
           ),
-          centerTitle: true,
-          title: Text(
-            STRING.COTACAO,
-            style: TextStyle(color: AppCores.PRETO),
-          ),
-          backgroundColor: AppCores.APPBAR,
-          leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back,
-              color: AppCores.PRETO,
-            ),
-            onPressed: () {},
-          )),
-      body: conteudo,
+        ),
+        centerTitle: true,
+        title: Text(
+          STRING.COTACAO,
+          style: TextStyle(color: AppCores.PRETO),
+        ),
+        backgroundColor: AppCores.APPBAR,
+        leading: BackButton(
+          color: AppCores.PRETO,
+        ),
+      ),
     );
   }
 }
