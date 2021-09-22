@@ -7,9 +7,12 @@ class ScaffoldPrincipal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var mediaQuery = MediaQuery.of(context);
+    var size = mediaQuery.size;
     return Scaffold(
       backgroundColor: AppCores.BACKGROUND,
       appBar: AppBar(
+        toolbarHeight: size.height * 0.15,
         centerTitle: true,
         title: Text(
           STRING.COTACAO,
