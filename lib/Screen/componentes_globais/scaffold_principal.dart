@@ -22,7 +22,7 @@ class ScaffoldPrincipal extends StatelessWidget {
         centerTitle: true,
         title: Text(
           STRING.COTACAO,
-          style: TextStyle(color: AppCores.PRETO),
+          style: TextStyle(color: AppCores.PRETO, fontWeight: FontWeight.w800),
         ),
         backgroundColor: AppCores.BRANCO,
         leading: BackButton(
