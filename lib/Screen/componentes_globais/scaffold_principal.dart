@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/cores.dart';
-import 'package:neo/Screen/componentes_globais/textos_gerais/textos.dart';
+import 'package:neo/Screen/componentes_globais/textos_gerais/strings.dart';
+import 'package:neo/Screen/componentes_globais/textos_gerais/titulos/titulos.dart';
 
 class ScaffoldPrincipal extends StatelessWidget {
   final Widget conteudo;
@@ -21,7 +22,7 @@ class ScaffoldPrincipal extends StatelessWidget {
         ),
         centerTitle: true,
         title: Text(
-          STRING.COTACAO,
+          TITULOS.COTACAO,
           style: TextStyle(color: AppCores.PRETO, fontWeight: FontWeight.w800),
         ),
         backgroundColor: AppCores.BRANCO,
