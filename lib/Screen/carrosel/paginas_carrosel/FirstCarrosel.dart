@@ -5,12 +5,12 @@ import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_cotar.
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_entrar.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_selecionado.dart';
-import 'package:neo/Screen/componentes_globais/componentes_carrosel/imagens_carrosel.dart';
+import 'package:neo/Screen/componentes_globais/imagens.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/texto_inicio.dart';
-import 'package:neo/Screen/componentes_globais/componentes_carrosel/titulo.dart';
 import 'package:neo/Screen/componentes_globais/cores.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
 import 'package:neo/Screen/componentes_globais/textos_gerais/textos.dart';
+import 'package:neo/Screen/componentes_globais/textos_gerais/titulo.dart';
 
 class FirstCarrosel extends StatefulWidget {
   const FirstCarrosel({Key key}) : super(key: key);
@@ -27,7 +27,7 @@ class _FirstCarroselState extends State<FirstCarrosel> {
     return Scaffold(
       body: Column(
         children: [
-          RotasImagensCarrosel(image: AssetImage(RoutesImagens.FIRSTIMAGE)),
+          RotasImagens(h: 0.5,image: AssetImage(RoutesImagens.FIRSTIMAGE)),
           Expanded(
               child: Container(
             height: size.height * 0.3,
@@ -40,7 +40,7 @@ class _FirstCarroselState extends State<FirstCarrosel> {
                 color: AppCores.ROXOPRINCIPAL),
             child: Column(
               children: [
-                Titulo(titulo: STRING.INICIO),
+               Titulo(h:0.08,r:0,titulo: STRING.INICIO,font: 26, cor: AppCores.BRANCO),
                 TextoInicio(texto: STRING.TEXTOINICIO),
                 BotaoCotar(texto: STRING.BOTAO),
                 BotaoEntrar(texto: STRING.BOTAOENTRAR),

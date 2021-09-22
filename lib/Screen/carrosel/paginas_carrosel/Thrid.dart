@@ -5,12 +5,12 @@ import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_cotar.
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_entrar.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_selecionado.dart';
-import 'package:neo/Screen/componentes_globais/componentes_carrosel/imagens_carrosel.dart';
+import 'package:neo/Screen/componentes_globais/imagens.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/texto_inicio.dart';
-import 'package:neo/Screen/componentes_globais/componentes_carrosel/titulo.dart';
 import 'package:neo/Screen/componentes_globais/cores.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
 import 'package:neo/Screen/componentes_globais/textos_gerais/textos.dart';
+import 'package:neo/Screen/componentes_globais/textos_gerais/titulo.dart';
 
 class ThridCarrosel extends StatefulWidget {
   const ThridCarrosel({Key key}) : super(key: key);
@@ -27,7 +27,7 @@ class _ThridCarroselState extends State<ThridCarrosel> {
     return Scaffold(
       body: Column(
         children: [
-          RotasImagensCarrosel(image: AssetImage(RoutesImagens.THRIDIMAGE)),
+          RotasImagens(h: 0.5,image: AssetImage(RoutesImagens.THRIDIMAGE)),
           Expanded(
               child: Container(
             height: size.height * 0.3,
@@ -40,7 +40,7 @@ class _ThridCarroselState extends State<ThridCarrosel> {
                 color: AppCores.ROXOPRINCIPAL),
             child: Column(
               children: [
-                Titulo(titulo: STRING.THRIDTITULO),
+                Titulo(h:0.08,r:0,titulo: STRING.THRIDTITULO,font: 26, cor: AppCores.BRANCO),
                 TextoInicio(texto: STRING.TEXTOTHRID),
                 BotaoCotar(texto: STRING.BOTAO),
                 BotaoEntrar(texto: STRING.BOTAOENTRAR),

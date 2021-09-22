@@ -16,5 +16,7 @@ abstract class STRING {
   static const TEXTOTHRID =
       'Aqui você tem total flexibilidade e faz seu pagamento de forma mensal podendo cancelar a qualquer momento e sem custo adicional';
 
+  //titulo cotacao
   static const COTACAO = 'Cotação';
+  static const TITULO = 'Bem-Vindo!';
 }
