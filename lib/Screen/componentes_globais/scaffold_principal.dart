@@ -8,9 +8,12 @@ class ScaffoldPrincipal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var mediaQuery = MediaQuery.of(context);
+    var size = mediaQuery.size;
     return Scaffold(
       backgroundColor: AppCores.BACKGROUND,
       appBar: AppBar(
+          toolbarHeight: size.height * 0.15,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(
               bottom: Radius.circular(10),
