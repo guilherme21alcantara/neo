@@ -1,6 +1,5 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:neo/Routes/app_routes.dart';
-import 'package:neo/Screen/carrosel/paginas_carrosel/FirstCarrosel.dart';
 import 'package:neo/Screen/cotacao/cadastro.dart';
 import 'package:neo/Screen/cotacao/informe_cep_trabalho.dart';
 import 'package:neo/Screen/cotacao/opcoes_uso_veiculo.dart';
@@ -9,6 +8,6 @@ import 'package:neo/Screen/splash.dart';
 
 class AppPages {
   static final routes = [
-    GetPage(name: Routes.INITIAL, page: () => InformeCEPTrabalho())
+    GetPage(name: Routes.INITIAL, page: () => CotarCadastro())
   ];
 }
