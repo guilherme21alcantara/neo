@@ -28,7 +28,9 @@ class _CustomRadioButtonState extends State<CustomRadioButton> {
           vertical: widget.size.width * 0.03,
           horizontal: widget.size.width * 0.05),
       child: Container(
-        color: AppCores.BRANCO,
+        decoration: BoxDecoration(
+            color: AppCores.BRANCO,
+            borderRadius: BorderRadius.all(Radius.circular(10))),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [

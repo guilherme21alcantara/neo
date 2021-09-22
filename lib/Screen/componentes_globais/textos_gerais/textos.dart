@@ -16,12 +16,5 @@ abstract class STRING {
   static const TEXTOTHRID =
       'Aqui você tem total flexibilidade e faz seu pagamento de forma mensal podendo cancelar a qualquer momento e sem custo adicional';
 
-  //Cotação
-  static const INFORMECEPPERNOITA =
-      'Me informa o CEP onde o seu veículo pernoita';
-
-  static const SELECIONEOPCOESUSOVEICULO =
-      'Selecione uma ou mais opções em como você usa o seu veículo';
-
   static const COTACAO = 'Cotação';
 }

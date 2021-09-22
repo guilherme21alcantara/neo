@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:neo/Screen/componentes_globais/cores.dart';
 import 'package:neo/Screen/componentes_globais/inputs/radio_button.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+import 'package:neo/Screen/componentes_globais/textos_gerais/Cotacao/opcoes_veiculo.dart';
 
 class OpcoesUsoVeiculo extends StatefulWidget {
   const OpcoesUsoVeiculo({Key? key}) : super(key: key);
@@ -25,8 +27,20 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
       width: size.width,
       child: Column(
         children: [
-          Container(
-            child: Text('asinfdioanfioanfioan'),
+          Padding(
+            padding: EdgeInsets.only(
+                right: size.width * 0.05,
+                left: size.width * 0.05,
+                top: size.height * 0.02,
+                bottom: size.height * 0.01),
+            child: Text(
+              OPCOESVEICULO.CORPO,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: AppCores.ROXOPRINCIPAL,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold),
+            ),
           ),
           Container(
             height: size.height * 0.7,
