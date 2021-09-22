@@ -1,3 +1,4 @@
+//@dart=2.9
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/cores.dart';
 
@@ -6,10 +7,10 @@ class MainHeader extends StatelessWidget {
   final String text;
   final double paddingLados;
   const MainHeader(
-      {Key? key,
-      required this.size,
-      required this.text,
-      required this.paddingLados})
+      {Key key,
+      this.size,
+      this.text,
+      this.paddingLados})
       : super(key: key);
 
   @override
