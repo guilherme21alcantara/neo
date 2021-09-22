@@ -9,8 +9,9 @@ import 'package:neo/Screen/componentes_globais/imagens.dart';
 import 'package:neo/Screen/componentes_globais/componentes_carrosel/texto_inicio.dart';
 import 'package:neo/Screen/componentes_globais/cores.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
-import 'package:neo/Screen/componentes_globais/textos_gerais/textos.dart';
+import 'package:neo/Screen/componentes_globais/textos_gerais/strings.dart';
 import 'package:neo/Screen/componentes_globais/textos_gerais/titulo.dart';
+import 'package:neo/Screen/componentes_globais/textos_gerais/titulos/titulos.dart';
 
 class FirstCarrosel extends StatefulWidget {
   const FirstCarrosel({Key key}) : super(key: key);
@@ -40,7 +41,7 @@ class _FirstCarroselState extends State<FirstCarrosel> {
                 color: AppCores.ROXOPRINCIPAL),
             child: Column(
               children: [
-               Titulo(h:0.08,r:0,titulo: STRING.INICIO,font: 26, cor: AppCores.BRANCO),
+               Titulo(h:0.08,r:0,titulo: TITULOS.FIRSTTITULO,font: 26, cor: AppCores.BRANCO),
                 TextoInicio(texto: STRING.TEXTOINICIO),
                 BotaoCotar(texto: STRING.BOTAO),
                 BotaoEntrar(texto: STRING.BOTAOENTRAR),
