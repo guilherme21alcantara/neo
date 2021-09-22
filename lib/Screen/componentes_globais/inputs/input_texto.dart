@@ -16,7 +16,7 @@ class _InputTextoState extends State<InputTexto> {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-          vertical: widget.size.height * 0.02,
+          vertical: widget.size.height * 0.01,
           horizontal: widget.size.width * 0.05),
       child: Container(
           height: widget.size.height * 0.05,
