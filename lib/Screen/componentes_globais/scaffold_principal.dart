@@ -24,7 +24,7 @@ class ScaffoldPrincipal extends StatelessWidget {
           STRING.COTACAO,
           style: TextStyle(color: AppCores.PRETO),
         ),
-        backgroundColor: AppCores.APPBAR,
+        backgroundColor: AppCores.BRANCO,
         leading: BackButton(
           color: AppCores.PRETO,
         ),
