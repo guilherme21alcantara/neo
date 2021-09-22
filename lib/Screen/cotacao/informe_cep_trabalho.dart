@@ -34,27 +34,7 @@ class _InformeCEPTrabalhoState extends State<InformeCEPTrabalho> {
                 children: [
                   Column(
                     children: [
-                      MainHeader(
-                          paddingLados: size.width * 0.2,
-                          size: size,
-                          text: INFORMECEP.TRABALHO),
-                      Padding(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: size.width * 0.05,
-                            vertical: size.height * 0.01),
-                        child: Container(
-                            color: AppCores.BRANCO,
-                            child: Column(
-                              children: [
-                                InputTexto(size: size, text: 'CEP'),
-                                CustomTextButton(
-                                    textoComum: 'Não sabe o CEP?',
-                                    textoClicavel: 'Aqui !',
-                                    function: () {},
-                                    size: size)
-                              ],
-                            )),
-                      )
+                      _cepField(size),
                     ],
                   )
                 ],
@@ -64,5 +44,34 @@ class _InformeCEPTrabalhoState extends State<InformeCEPTrabalho> {
         ],
       ),
     );
+  }
+
+  Widget _cepField(Size size) {
+    return Column(children: [
+      MainHeader(
+          paddingLados: size.width * 0.2,
+          size: size,
+          text: INFORMECEP.TRABALHO),
+      Padding(
+        padding: EdgeInsets.symmetric(
+            horizontal: size.width * 0.05, vertical: size.height * 0.01),
+        child: Container(
+            color: AppCores.BRANCO,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                InputTexto(size: size, text: INFORMECEP.CEP),
+                CustomTextButton(
+                    textoComum: INFORMECEP.NAOSABECEP,
+                    textoClicavel: INFORMECEP.AQUI,
+                    function: () {},
+                    size: size),
+                SizedBox(
+                  height: size.height * 0.01,
+                )
+              ],
+            )),
+      )
+    ]);
   }
 }
