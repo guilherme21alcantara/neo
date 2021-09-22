@@ -12,15 +12,13 @@ class ScaffoldPrincipal extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppCores.BACKGROUND,
       appBar: AppBar(
-<<<<<<< HEAD
         toolbarHeight: size.height * 0.15,
-=======
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(10),
           ),
         ),
->>>>>>> e83bf00284a90e1363d88bfc538b7ee90ab45b73
+
         centerTitle: true,
         title: Text(
           STRING.COTACAO,
