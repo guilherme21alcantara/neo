@@ -15,4 +15,6 @@ abstract class INFORMECEP {
   static const RUA = 'Rua / Avenida';
 
   static const NUMERO = 'Número';
+
+  static const VEICULOFICAGARAGEM = 'O Veículo ﬁca em garagem?';
 }
