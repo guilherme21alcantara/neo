@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/cores.dart';
-import 'package:neo/Screen/textp_globais/textos_gerais/titulos/titulos.dart';
+import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+
+import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 
 class ScaffoldPrincipal extends StatelessWidget {
   final Widget conteudo;

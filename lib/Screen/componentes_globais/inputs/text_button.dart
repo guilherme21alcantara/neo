@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/cores.dart';
+import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+
 
 class CustomTextButton extends StatefulWidget {
   final Size size;

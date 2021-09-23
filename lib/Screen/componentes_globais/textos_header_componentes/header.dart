@@ -1,6 +1,7 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/cores.dart';
+import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+
 
 class MainHeader extends StatelessWidget {
   final Size size;

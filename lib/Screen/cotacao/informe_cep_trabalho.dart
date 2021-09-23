@@ -1,14 +1,15 @@
+//@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/cores.dart';
+import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_dropdown.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
 import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 import 'package:neo/Screen/componentes_globais/textos_header_componentes/header.dart';
-import 'package:neo/Screen/textp_globais/textos_gerais/Cotacao/informe_cep.dart';
+import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/informe_cep.dart';
 
 class InformeCEPTrabalho extends StatefulWidget {
-  const InformeCEPTrabalho({Key? key}) : super(key: key);
+  const InformeCEPTrabalho({Key key}) : super(key: key);
 
   @override
   _InformeCEPTrabalhoState createState() => _InformeCEPTrabalhoState();
@@ -62,7 +63,7 @@ class _InformeCEPTrabalhoState extends State<InformeCEPTrabalho> {
             child: Column(
               children: [
                 SizedBox(height: size.height * 0.01),
-                InputTexto(size: size, text: 'CEP'),
+                InputTexto(size: size, text: 'CEP', h: 0.01,v: 0.05),
                 CustomTextButton(
                     textoComum: 'Não sabe o CEP?',
                     textoClicavel: 'Aqui !',
@@ -88,8 +89,8 @@ class _InformeCEPTrabalhoState extends State<InformeCEPTrabalho> {
                 size: size, text: 'Estado', optionsList: ['optionsList']),
             CustomDropdown(
                 size: size, text: 'Cidade', optionsList: ['optionsList']),
-            InputTexto(size: size, text: 'Rua / Avenida'),
-            InputTexto(size: size, text: 'Número'),
+            InputTexto(size: size, text: 'Rua / Avenida', h: 0.01,v: 0.05),
+            InputTexto(size: size, text: 'Número', h: 0.01,v: 0.05),
             SizedBox(height: size.height * 0.01),
           ],
         ),
