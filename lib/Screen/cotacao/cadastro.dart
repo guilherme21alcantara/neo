@@ -18,7 +18,7 @@ class _CotarCadastroState extends State<CotarCadastro> {
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
-      conteudo: lista(size, true, true, true, false),
+      conteudo: lista(size, true, true, true, true,false),
     );
   }
 }

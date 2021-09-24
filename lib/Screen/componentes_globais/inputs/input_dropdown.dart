@@ -27,7 +27,8 @@ class _CustomDropdownState extends State<CustomDropdown> {
           right: widget.size.width * 0.05,
           left: widget.size.width * 0.05),
       child: Container(
-          height: widget.size.height * 0.06,
+          height: widget.size.height * 0.055,
+          width: widget.size.width * 0.84,
           decoration: BoxDecoration(
               border: Border.all(),
               borderRadius: BorderRadius.all(Radius.circular(20))),
@@ -47,7 +48,7 @@ class _CustomDropdownState extends State<CustomDropdown> {
                   ),
                   hintText: widget.text,
                   hintStyle: TextStyle(color: AppCores.PRETO)),
-              dropdownHeight: widget.size.height * 0.14,
+              dropdownHeight: widget.size.height * 0.16,
             ),
           )),
     );

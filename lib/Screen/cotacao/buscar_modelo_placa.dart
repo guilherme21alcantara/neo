@@ -4,7 +4,7 @@ import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 import 'package:neo/widgets/widgets_lista_cotacao.dart';
 
-class BuscarPlaca extends StatelessWidget {
+class BuscarModelo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class BuscarPlaca extends StatelessWidget {
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
-      conteudo: lista(size, true, false, false, true, false),
+      conteudo: lista(size, true, false, false,false ,true),
     );
   }
 }
