@@ -4,7 +4,8 @@ import 'package:flutter/widgets.dart';
 
 class BotaoEntrar extends StatelessWidget {
   final String texto;
-  const BotaoEntrar({this.texto});
+  final Color cor;
+  const BotaoEntrar({this.texto, this.cor});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class BotaoEntrar extends StatelessWidget {
               texto,
               style: TextStyle(
                   fontSize: 18,
-                  color: Colors.white,
+                  color: cor,
                   decoration: TextDecoration.underline),
             ),
             onPressed: () {}),
