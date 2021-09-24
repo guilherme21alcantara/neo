@@ -10,6 +10,6 @@ import 'package:neo/Screen/splash.dart';
 
 class AppPages {
   static final routes = [
-    GetPage(name: Routes.INITIAL, page: () => InformeCPF())
+    GetPage(name: Routes.INITIAL, page: () => InformeCEPFaculdade())
   ];
 }
