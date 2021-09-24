@@ -5,7 +5,12 @@ import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 
 class ScaffoldPrincipal extends StatelessWidget {
   final Widget conteudo;
-  const ScaffoldPrincipal({Key? key, required this.conteudo}) : super(key: key);
+  final String title;
+  ScaffoldPrincipal({
+    Key? key,
+    required this.conteudo,
+    required this.title,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +27,7 @@ class ScaffoldPrincipal extends StatelessWidget {
         ),
         centerTitle: true,
         title: Text(
-          TITULOS.COTACAO,
+          title,
           style: TextStyle(color: AppCores.PRETO, fontWeight: FontWeight.w800),
         ),
         backgroundColor: AppCores.BRANCO,

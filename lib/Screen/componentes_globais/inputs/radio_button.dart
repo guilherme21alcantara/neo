@@ -34,10 +34,18 @@ class _CustomRadioButtonState extends State<CustomRadioButton> {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-          vertical: widget.size.width * 0.02,
+          vertical: widget.size.width * 0.01,
           horizontal: widget.size.width * 0.05),
       child: Container(
         decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.1),
+                spreadRadius: 2,
+                blurRadius: 2,
+                offset: Offset(0, 3), // changes position of shadow
+              ),
+            ],
             border: Border.all(color: _getColor(isBorderVisible)),
             color: AppCores.BRANCO,
             borderRadius: BorderRadius.all(Radius.circular(10))),
@@ -47,7 +55,7 @@ class _CustomRadioButtonState extends State<CustomRadioButton> {
             Padding(
               padding: EdgeInsets.only(
                   right: widget.size.width * 0.01,
-                  left: widget.size.width * 0.02,
+                  left: widget.size.width * 0.01,
                   top: widget.size.width * 0.01,
                   bottom: widget.size.width * 0.01),
               child: Radio(
@@ -60,11 +68,11 @@ class _CustomRadioButtonState extends State<CustomRadioButton> {
             ),
             Padding(
               padding: EdgeInsets.only(
-                  left: widget.size.width * 0.02,
+                  left: widget.size.width * 0.01,
                   bottom: widget.size.width * 0.01),
               child: Text(
                 widget.text,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),
           ],

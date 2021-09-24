@@ -9,6 +9,7 @@ import 'package:neo/Screen/componentes_globais/inputs/radio_button_fino.dart';
 import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/informe_cep.dart';
+import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 
 class InformeCEPFaculdade extends StatefulWidget {
   const InformeCEPFaculdade({Key key}) : super(key: key);
@@ -24,7 +25,7 @@ class _InformeCEPFaculdadeState extends State<InformeCEPFaculdade> {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(conteudo: _corpo(size));
+    return ScaffoldPrincipal(title: TITULOS.COTACAO, conteudo: _corpo(size));
   }
 
   Widget _corpo(Size size) {
