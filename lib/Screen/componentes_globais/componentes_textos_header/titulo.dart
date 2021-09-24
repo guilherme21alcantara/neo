@@ -8,7 +8,8 @@ class Titulo extends StatelessWidget {
   final String titulo;
   final double font;
   final Color cor;
-  const Titulo({this.h,this.r ,this.titulo, this.font, this.cor});
+  final FontWeight bold;
+  const Titulo({this.h,this.r ,this.titulo, this.font, this.cor, this.bold});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class Titulo extends StatelessWidget {
       child: Text(
         titulo,
         style:
-            TextStyle(fontSize: font, fontWeight: FontWeight.bold, color: cor),
+            TextStyle(fontSize: font, fontWeight: bold, color: cor),
       ),
     );
   }

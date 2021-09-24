@@ -1,13 +1,12 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/Screen/componentes_globais/componentes_textos_header/header.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_dropdown.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
-import 'package:neo/Screen/componentes_globais/inputs/radio_button.dart';
 import 'package:neo/Screen/componentes_globais/inputs/radio_button_fino.dart';
 import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
-import 'package:neo/Screen/componentes_globais/textos_header_componentes/header.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/informe_cep.dart';
 
 class InformeCEPTrabalho extends StatefulWidget {
@@ -73,6 +72,7 @@ class _InformeCEPTrabalhoState extends State<InformeCEPTrabalho> {
                     textoComum: 'Não sabe o CEP?',
                     textoClicavel: 'Aqui !',
                     function: () {},
+                    h: 0.08,
                     size: size),
                 SizedBox(height: size.height * 0.01),
               ],
