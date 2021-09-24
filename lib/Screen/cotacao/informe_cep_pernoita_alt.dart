@@ -4,14 +4,9 @@ import 'package:neo/Screen/cotacao/formulario_cep.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/informe_cep.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 
-class InformeCEPPernoita extends StatefulWidget {
-  const InformeCEPPernoita({Key? key}) : super(key: key);
+class InformeCEPPernoitaAlt extends StatelessWidget {
+  const InformeCEPPernoitaAlt({Key? key}) : super(key: key);
 
-  @override
-  _InformeCEPPernoitaState createState() => _InformeCEPPernoitaState();
-}
-
-class _InformeCEPPernoitaState extends State<InformeCEPPernoita> {
   @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
@@ -21,7 +16,7 @@ class _InformeCEPPernoitaState extends State<InformeCEPPernoita> {
         conteudo: FormularioCEP(
           size: size,
           title: INFORMECEP.PERNOITA,
-          temCampoInfo: true,
+          temCampoInfo: false,
         ));
   }
 }

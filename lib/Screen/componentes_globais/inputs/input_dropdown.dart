@@ -2,7 +2,6 @@ import 'package:dropdown_plus/dropdown_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
 
-
 class CustomDropdown extends StatefulWidget {
   final Size size;
   final String text;
@@ -28,26 +27,27 @@ class _CustomDropdownState extends State<CustomDropdown> {
           right: widget.size.width * 0.05,
           left: widget.size.width * 0.05),
       child: Container(
-          height: widget.size.height * 0.05,
+          height: widget.size.height * 0.06,
           decoration: BoxDecoration(
               border: Border.all(),
               borderRadius: BorderRadius.all(Radius.circular(20))),
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: widget.size.width * 0.05),
-            child: Center(
-              child: TextDropdownFormField(
-                options: widget.optionsList,
-                decoration: InputDecoration(
-                    border: InputBorder.none,
-                    suffixIcon: Icon(
-                      Icons.arrow_drop_down,
-                      color: AppCores.PRETO,
-                      size: 40,
-                    ),
-                    hintText: widget.text,
-                    hintStyle: TextStyle(color: AppCores.PRETO)),
-                dropdownHeight: widget.size.height * 0.14,
-              ),
+            padding: EdgeInsets.only(
+                right: widget.size.width * 0.05,
+                left: widget.size.width * 0.05,
+                top: widget.size.height * 0.002),
+            child: TextDropdownFormField(
+              options: widget.optionsList,
+              decoration: InputDecoration(
+                  border: InputBorder.none,
+                  suffixIcon: Icon(
+                    Icons.arrow_drop_down,
+                    color: AppCores.PRETO,
+                    size: 40,
+                  ),
+                  hintText: widget.text,
+                  hintStyle: TextStyle(color: AppCores.PRETO)),
+              dropdownHeight: widget.size.height * 0.14,
             ),
           )),
     );

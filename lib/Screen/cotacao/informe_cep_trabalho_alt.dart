@@ -12,14 +12,14 @@ import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 
 import 'formulario_cep.dart';
 
-class InformeCEPTrabalho extends StatefulWidget {
-  const InformeCEPTrabalho({Key key}) : super(key: key);
+class InformeCEPTrabalhoAlt extends StatefulWidget {
+  const InformeCEPTrabalhoAlt({Key key}) : super(key: key);
 
   @override
-  _InformeCEPTrabalhoState createState() => _InformeCEPTrabalhoState();
+  _InformeCEPTrabalhoAltState createState() => _InformeCEPTrabalhoAltState();
 }
 
-class _InformeCEPTrabalhoState extends State<InformeCEPTrabalho> {
+class _InformeCEPTrabalhoAltState extends State<InformeCEPTrabalhoAlt> {
   bool veiculoFicaGaragem;
 
   @override
@@ -31,7 +31,7 @@ class _InformeCEPTrabalhoState extends State<InformeCEPTrabalho> {
         conteudo: FormularioCEP(
           size: size,
           title: INFORMECEP.TRABALHO,
-          temCampoInfo: true,
+          temCampoInfo: false,
         ));
   }
 }

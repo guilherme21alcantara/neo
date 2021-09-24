@@ -14,7 +14,7 @@ class InputTexto extends StatelessWidget {
       padding: EdgeInsets.symmetric(
           vertical: size.height * h, horizontal: size.width * v),
       child: Container(
-          height: size.height * 0.05,
+          height: size.height * 0.06,
           decoration: BoxDecoration(
               border: Border.all(),
               borderRadius: BorderRadius.all(Radius.circular(20))),
