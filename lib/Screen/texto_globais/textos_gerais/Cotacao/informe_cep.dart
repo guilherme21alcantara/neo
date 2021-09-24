@@ -4,6 +4,8 @@ abstract class INFORMECEP {
 
   static const FACULDADE = 'Me informa o CEP onde fica a sua faculdade / curso';
 
+  static const PERNOITA = 'Me informa o CEP onde o seu veículo pernoita';
+
   static const CEP = 'CEP';
 
   static const NAOSABECEP = 'Não sabe o CEP?';
