@@ -7,4 +7,5 @@ abstract class TITULOS {
   static const TITULO = 'Bem-Vindo!';
   static const SUBTITULO = 'Vamos cotar o seu Seguro?';
   static const CONTA = 'Conta';
+  static const BUSCA = 'Me fale um pouco do seu veículo';
 }

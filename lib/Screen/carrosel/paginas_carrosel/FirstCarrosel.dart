@@ -53,7 +53,7 @@ class _FirstCarroselState extends State<FirstCarrosel> {
                     child: Row(
                       children: [
                         SizedBox(width: size.width * 0.02),
-                        ContainerSelect(),
+                        ContainerSelect(cor: AppCores.BRANCO),
                         SizedBox(width: size.width * 0.05),
                         ContainerNaoSelect(),
                         SizedBox(width: size.width * 0.05),

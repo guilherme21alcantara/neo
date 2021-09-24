@@ -6,6 +6,7 @@ abstract class CADASTRO
   static const NOME = 'Nome';
   static const CEL =  'Celular com (DDD)';
   static const Email = 'Email';
+  static const PLACA = 'Qual a plca do seu veículo?';
   //botao
   static const PROXIMO = 'Próximo';
 

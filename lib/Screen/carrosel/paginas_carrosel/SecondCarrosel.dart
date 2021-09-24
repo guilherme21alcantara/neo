@@ -55,7 +55,7 @@ class _SecondCarroselState extends State<SecondCarrosel> {
                         SizedBox(width: size.width * 0.02),
                         ContainerNaoSelect(),
                         SizedBox(width: size.width * 0.05),
-                        ContainerSelect(),
+                        ContainerSelect(cor: AppCores.BRANCO),
                         SizedBox(width: size.width * 0.05),
                         ContainerNaoSelect()
                       ],

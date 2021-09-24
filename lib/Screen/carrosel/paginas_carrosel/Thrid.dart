@@ -57,7 +57,7 @@ class _ThridCarroselState extends State<ThridCarrosel> {
                         SizedBox(width: size.width * 0.05),
                         ContainerNaoSelect(),
                         SizedBox(width: size.width * 0.05),
-                        ContainerSelect(),
+                        ContainerSelect(cor: AppCores.BRANCO),
                       ],
                     ),
                   ),

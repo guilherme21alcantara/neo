@@ -1,14 +1,17 @@
+//@dart=2.9
 import 'package:flutter/cupertino.dart';
 
 class CustomList extends StatelessWidget {
   final Size size;
   final double height;
   final Widget widget;
+  final bool ativa;
   const CustomList(
-      {Key? key,
-      required this.size,
-      required this.height,
-      required this.widget})
+      {Key key,
+      this.size,
+      this.height,
+      this.widget,
+      this.ativa})
       : super(key: key);
 
   @override
@@ -22,7 +25,10 @@ class CustomList extends StatelessWidget {
             delegate: SliverChildListDelegate(List.generate(
               1,
               (i) => Column(
-                children: [widget],
+                children: 
+                [
+                  if (ativa)widget
+                  ],
               ),
             ).toList()),
           ),

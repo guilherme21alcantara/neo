@@ -10,7 +10,7 @@ class ContainerNaoSelect extends StatelessWidget {
       height: size.height * 0.025,
       width: size.width * 0.05,
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(30)),
+          color: Colors.white, border: Border.all(),borderRadius: BorderRadius.circular(30)),
     );
   }
 }
