@@ -2,7 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hexcolor/hexcolor.dart';
-
+import 'package:get/route_manager.dart';
+import 'package:neo/Screen/cotacao/cadastro.dart';
 class BotaoCotar extends StatelessWidget {
   final String texto;
 
@@ -28,7 +29,10 @@ class BotaoCotar extends StatelessWidget {
               texto,
               style: TextStyle(fontSize: 18, color: HexColor('#7f47fa')),
             ),
-            onPressed: () {},
+            onPressed: () 
+            {
+               Get.offAll(CotarCadastro());
+            },
           )),
     );
   }

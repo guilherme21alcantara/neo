@@ -1,8 +1,9 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/Screen/cotacao/buscar_placa.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
-
+import 'package:get/route_manager.dart';
 class BotaoGeral extends StatelessWidget {
   final double h, v;
   final Size size;
@@ -19,7 +20,7 @@ class BotaoGeral extends StatelessWidget {
             vertical: size.height * h, horizontal: size.width * v),
         child: GestureDetector(
             onTap: () {
-              print("object");
+              Get.offAll(BuscarPlaca());
             },
             child: Container(
                 height: size.height * 0.05,

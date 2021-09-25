@@ -8,9 +8,11 @@ import 'package:neo/Screen/componentes_globais/componentes_textos_header/titulo.
 import 'package:neo/Screen/componentes_globais/inputs/input_dropdown.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
 import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
+import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/Screen/cotacao/opcoes_uso_veiculo.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
-
+import 'package:get/route_manager.dart';
 Widget modelo(Size size) {
   return Container(
       color: AppCores.BACKGROUND,
@@ -68,6 +70,15 @@ Widget modelo(Size size) {
                   SizedBox(height: size.height * 0.01),
                   CustomDropdown(
                       size: size, text: 'Modelo', optionsList: ['optionsList']),
+                    
+                  IconButton(
+                    icon: Image.asset(RoutesImagens.BUTTON),
+                    iconSize: 30,
+                    onPressed: () {
+                      Get.offAll(OpcoesUsoVeiculo());
+                      
+                    },
+                  )
                 ],
               )),
           SizedBox(height: size.height * 0.32),
