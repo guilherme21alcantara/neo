@@ -71,14 +71,21 @@ Widget modelo(Size size) {
                   CustomDropdown(
                       size: size, text: 'Modelo', optionsList: ['optionsList']),
                     
-                  IconButton(
-                    icon: Image.asset(RoutesImagens.BUTTON),
-                    iconSize: 30,
-                    onPressed: () {
-                      Get.offAll(OpcoesUsoVeiculo());
-                      
-                    },
-                  )
+                    Container
+                    (
+                      decoration: BoxDecoration(border: Border.all(color: AppCores.ROXOPRINCIPAL),
+                      borderRadius: BorderRadius.all(Radius.circular(20))),
+                      height: size.height * 0.05 ,
+                      width: size.width * 0.1,
+                      child: IconButton(
+                              icon: Image.asset(RoutesImagens.BUTTON),
+                              iconSize: 30,
+                              onPressed: () {
+                                Get.offAll(OpcoesUsoVeiculo());  
+                              }),
+                       
+                    ),
+                  
                 ],
               )),
           SizedBox(height: size.height * 0.32),
