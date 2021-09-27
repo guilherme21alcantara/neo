@@ -4,10 +4,7 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:neo/Screen/componentes_globais/componentes_botao/botao_geral.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/Screen/componentes_globais/inputs/checkbox.dart';
-import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto_icon.dart';
-import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
-import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 
 Widget camposLogin(Size size) {
   return Container(

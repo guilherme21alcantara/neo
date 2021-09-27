@@ -1,5 +1,6 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:neo/Routes/app_routes.dart';
+import 'package:neo/Screen/conta/esqueceu_senha.dart';
 import 'package:neo/Screen/conta/login.dart';
 import 'package:neo/Screen/cotacao/buscar_placa.dart';
 import 'package:neo/Screen/cotacao/cadastro.dart';
@@ -16,6 +17,6 @@ import 'package:neo/Screen/splash.dart';
 
 class AppPages {
   static final routes = [
-    GetPage(name: Routes.INITIAL, page: () => LoginPage())
+    GetPage(name: Routes.INITIAL, page: () => EsqueceuSenhaPage())
   ];
 }
