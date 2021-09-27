@@ -33,7 +33,7 @@ class _EsqueceuSenhaPageState extends State<EsqueceuSenhaPage> {
               image: AssetImage(
                 RoutesImagensCotacao.CADASTRO,
               )),
-          camposEsqueceuSenha(size),
+          camposEsqueceuSenha(size, context),
         ],
       ),
     );

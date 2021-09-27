@@ -12,25 +12,25 @@ class BotaoGeral extends StatelessWidget {
   final double tam;
   final Color cor;
   final FontWeight fonte;
-  const BotaoGeral(
-      {Key key,
-      this.h,
-      this.v,
-      this.size,
-      this.text,
-      this.tam,
-      this.cor,
-      this.fonte})
-      : super(key: key);
+  final Function() function;
+  const BotaoGeral({
+    Key key,
+    this.h,
+    this.v,
+    this.size,
+    this.text,
+    this.tam,
+    this.cor,
+    this.fonte,
+    this.function,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(
         padding: EdgeInsets.symmetric(
             vertical: size.height * h, horizontal: size.width * v),
         child: GestureDetector(
-            onTap: () {
-              Get.offAll(BuscarPlaca());
-            },
+            onTap: function,
             child: Container(
                 height: size.height * 0.05,
                 decoration: BoxDecoration(
