@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:neo/Screen/componentes_globais/componentes_botao/botao_geral.dart';
+import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
 import 'package:neo/Screen/componentes_globais/custom_list.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_cotacao.dart';
@@ -33,7 +36,65 @@ class _EsqueceuSenhaPageState extends State<EsqueceuSenhaPage> {
               image: AssetImage(
                 RoutesImagensCotacao.CADASTRO,
               )),
-          camposEsqueceuSenha(size, context),
+          camposEsqueceuSenha(size),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: size.width * 0.1),
+            child: Container(
+                height: size.height * 0.05,
+                decoration: BoxDecoration(
+                    border: Border.all(color: AppCores.ROXOPRINCIPAL, width: 4),
+                    borderRadius: BorderRadius.all(Radius.circular(20))),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: size.width * 0.05),
+                  child: Center(
+                    child: TextButton(
+                      child: Text(
+                        'Enviar',
+                        style: TextStyle(
+                            fontSize: 16,
+                            color: AppCores.ROXOPRINCIPAL,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          title: Text('Recuperação de senha enviada'),
+                          content: Text(
+                              'Foi enviado um email para você seguir as instruções e recuperar a sua senha.'),
+                          actions: <Widget>[
+                            Center(
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: size.width * 0.05),
+                                child: Container(
+                                  height: size.height * 0.05,
+                                  width: size.width,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: AppCores.ROXOPRINCIPAL,
+                                          width: 4),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(20))),
+                                  child: TextButton(
+                                      child: Text(
+                                        'OK',
+                                        style: TextStyle(
+                                            fontSize: 16,
+                                            color: AppCores.ROXOPRINCIPAL,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      onPressed: () =>
+                                          Navigator.pop(context, 'OK')),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                )),
+          )
         ],
       ),
     );
