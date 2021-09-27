@@ -4,6 +4,7 @@ import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/Screen/cotacao/buscar_placa.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 import 'package:get/route_manager.dart';
+
 class BotaoGeral extends StatelessWidget {
   final double h, v;
   final Size size;
@@ -11,7 +12,15 @@ class BotaoGeral extends StatelessWidget {
   final double tam;
   final Color cor;
   final FontWeight fonte;
-  const BotaoGeral({Key key, this.h, this.v, this.size, this.text, this.tam, this.cor, this.fonte})
+  const BotaoGeral(
+      {Key key,
+      this.h,
+      this.v,
+      this.size,
+      this.text,
+      this.tam,
+      this.cor,
+      this.fonte})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -30,13 +39,11 @@ class BotaoGeral extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: size.width * 0.05),
                   child: Center(
-                    child: Text(CADASTRO.PROXIMO, 
-                    style: TextStyle
-                    (
-                      fontSize: tam,
-                      color: cor,
-                      fontWeight: fonte
-                    ),),
+                    child: Text(
+                      text,
+                      style: TextStyle(
+                          fontSize: tam, color: cor, fontWeight: fonte),
+                    ),
                   ),
                 ))));
   }
