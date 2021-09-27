@@ -1,7 +1,9 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/Screen/cotacao/buscar_modelo_placa.dart';
 import 'package:neo/Screen/cotacao/buscar_placa.dart';
+import 'package:neo/Screen/cotacao/cadastro.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 import 'package:get/route_manager.dart';
 
@@ -12,7 +14,7 @@ class BotaoGeral extends StatelessWidget {
   final double tam;
   final Color cor;
   final FontWeight fonte;
-  final Function() function;
+  final OnTap fun;
   const BotaoGeral({
     Key key,
     this.h,
@@ -22,7 +24,7 @@ class BotaoGeral extends StatelessWidget {
     this.tam,
     this.cor,
     this.fonte,
-    this.function,
+    this.fun,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,10 @@ class BotaoGeral extends StatelessWidget {
         padding: EdgeInsets.symmetric(
             vertical: size.height * h, horizontal: size.width * v),
         child: GestureDetector(
-            onTap: function,
+            onTap: ()
+            {
+              Get.offAll(BuscarModelo());
+            },
             child: Container(
                 height: size.height * 0.05,
                 decoration: BoxDecoration(

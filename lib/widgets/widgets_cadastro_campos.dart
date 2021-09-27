@@ -4,8 +4,10 @@ import 'package:neo/Screen/componentes_globais/componentes_carrosel/botao_entrar
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
 import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
+import 'package:neo/Screen/cotacao/cadastro.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/strings.dart';
+import 'package:get/route_manager.dart';
 
 Widget campos(Size size) {
   return Container(
@@ -22,7 +24,7 @@ Widget campos(Size size) {
               text: CADASTRO.Email, size: size * 1.12, h: 0.01, v: 0.065),
           SizedBox(height: size.height * 0.03),
           BotaoGeral(
-            text: CADASTRO.Email,
+            text: CADASTRO.PROXIMO,
             size: size * 1.12,
             h: 0.01,
             v: 0.065,

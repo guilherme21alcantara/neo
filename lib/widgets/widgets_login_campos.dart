@@ -5,6 +5,8 @@ import 'package:neo/Screen/componentes_globais/componentes_botao/botao_geral.dar
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/Screen/componentes_globais/inputs/checkbox.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto_icon.dart';
+import 'package:get/route_manager.dart';
+import 'package:neo/Screen/conta/esqueceu_senha.dart';
 
 Widget camposLogin(Size size) {
   return Container(
@@ -32,11 +34,14 @@ Widget camposLogin(Size size) {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CustomCheckBox(
-                  size: size,
+                  size: size * 1.1,
                   title: 'Relembrar',
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () 
+                    {
+                      Get.offAll(EsqueceuSenhaPage());
+                    },
                     child: Text(
                       'Esqueci minha senha',
                       style: TextStyle(

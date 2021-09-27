@@ -1,6 +1,8 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/route_manager.dart';
+import 'package:neo/Screen/conta/login.dart';
 
 class BotaoEntrar extends StatelessWidget {
   final String texto;
@@ -24,7 +26,10 @@ class BotaoEntrar extends StatelessWidget {
                   color: cor,
                   decoration: TextDecoration.underline),
             ),
-            onPressed: () {}),
+            onPressed: () 
+            {
+              Get.offAll(LoginPage());
+            }),
       ),
     );
   }

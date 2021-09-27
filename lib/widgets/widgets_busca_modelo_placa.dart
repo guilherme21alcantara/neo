@@ -9,6 +9,8 @@ import 'package:neo/Screen/componentes_globais/inputs/input_dropdown.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
 import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/Screen/cotacao/buscar_modelo_placa.dart';
+import 'package:neo/Screen/cotacao/buscar_placa.dart';
 import 'package:neo/Screen/cotacao/opcoes_uso_veiculo.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
@@ -81,7 +83,7 @@ Widget modelo(Size size) {
                               icon: Image.asset(RoutesImagens.BUTTON),
                               iconSize: 30,
                               onPressed: () {
-                                Get.offAll(OpcoesUsoVeiculo());  
+                                Get.offAll(BuscarPlaca());  
                               }),
                        
                     ),
