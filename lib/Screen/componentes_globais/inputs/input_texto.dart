@@ -6,7 +6,8 @@ class InputTexto extends StatelessWidget {
   final double h, v;
   final Size size;
   final String text;
-  const InputTexto({Key key, this.h, this.v, this.size, this.text})
+  final IconData icon;
+  const InputTexto({Key key, this.h, this.v, this.size, this.text, this.icon})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -22,9 +23,17 @@ class InputTexto extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: size.width * 0.05),
             child: Center(
               child: TextFormField(
-                decoration: new InputDecoration.collapsed(
+                decoration: new InputDecoration(
+                    enabledBorder:
+                        UnderlineInputBorder(borderSide: BorderSide.none),
+                    focusedBorder:
+                        UnderlineInputBorder(borderSide: BorderSide.none),
                     hintText: text,
-                    hintStyle: TextStyle(color: AppCores.PRETO)),
+                    hintStyle: TextStyle(color: AppCores.PRETO),
+                    suffixIcon: Icon(
+                      icon,
+                      color: AppCores.PRETO,
+                    )),
               ),
             ),
           )),
