@@ -23,6 +23,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
       conteudo: _corpo(size),
+      
     );
   }
 
