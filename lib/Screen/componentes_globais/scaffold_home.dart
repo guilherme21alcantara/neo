@@ -16,27 +16,6 @@ class ScaffoldHome extends StatefulWidget {
 }
 
 class _ScaffoldHomeState extends State<ScaffoldHome> {
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-  ];
-
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
@@ -101,7 +80,7 @@ class _ScaffoldHomeState extends State<ScaffoldHome> {
         selectedItemColor: AppCores.ROXOPRINCIPAL,
         onTap: _onItemTapped,
       ),
-      body: _widgetOptions[_selectedIndex],
+      body: widget.conteudo[_selectedIndex],
     );
   }
 }

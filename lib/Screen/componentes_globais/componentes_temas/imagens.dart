@@ -4,7 +4,8 @@ import 'package:flutter/widgets.dart';
 class RotasImagens extends StatelessWidget {
   final AssetImage image;
   final double h;
-  const RotasImagens({this.image, this.h});
+  final double w;
+  const RotasImagens({this.image, this.h, this.w});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,7 @@ class RotasImagens extends StatelessWidget {
     var size = mediaQuery.size;
     return Container(
       height: size.height * h,
-      width: size.width,
+      width: w != null ? size.width * w : size.width,
       decoration: BoxDecoration(
         image: DecorationImage(image: image, fit: BoxFit.contain),
       ),
