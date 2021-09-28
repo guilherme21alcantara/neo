@@ -5,7 +5,7 @@ import 'package:neo/Screen/carrosel/paginas_carrosel/FirstCarrosel.dart';
 import 'package:neo/Screen/carrosel/paginas_carrosel/SecondCarrosel.dart';
 import 'package:neo/Screen/carrosel/paginas_carrosel/Thrid.dart';
 
-class HomePage extends StatelessWidget {
+class Carousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
