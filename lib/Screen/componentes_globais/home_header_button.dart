@@ -11,7 +11,7 @@ class HomeHeaderButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(size.width * 0.05),
+      padding: EdgeInsets.all(size.width * 0.04),
       child: Container(
         height: size.height * 0.2,
         decoration: BoxDecoration(
