@@ -15,19 +15,19 @@ class HomeCampos extends StatelessWidget {
             HomeCard(
                 size: size,
                 text: 'Adicionar veículo',
-                iconData: Icons.shield_outlined),
+                imageProvider: AssetImage('assets/adicionar_veiculo.png')),
             HomeCard(
                 size: size,
-                text: 'Adicionar veículo',
-                iconData: Icons.shield_outlined),
+                text: 'Pagamentos',
+                imageProvider: AssetImage('assets/pagamentos.png')),
             HomeCard(
                 size: size,
-                text: 'Adicionar veículo',
-                iconData: Icons.shield_outlined),
+                text: 'Eventos e Sinistros',
+                imageProvider: AssetImage('assets/eventos.png')),
             HomeCard(
                 size: size,
-                text: 'Adicionar veículo',
-                iconData: Icons.shield_outlined),
+                text: 'Cancelamento',
+                imageProvider: AssetImage('assets/cancelamento.png')),
           ],
         ),
         Column(
@@ -35,19 +35,19 @@ class HomeCampos extends StatelessWidget {
             HomeCard(
                 size: size,
                 text: 'Adicionar veículo',
-                iconData: Icons.shield_outlined),
+                imageProvider: AssetImage('assets/adicionar_veiculo.png')),
             HomeCard(
                 size: size,
                 text: 'Adicionar veículo',
-                iconData: Icons.shield_outlined),
+                imageProvider: AssetImage('assets/apolice.png')),
             HomeCard(
                 size: size,
                 text: 'Adicionar veículo',
-                iconData: Icons.shield_outlined),
+                imageProvider: AssetImage('assets/camera.png')),
             HomeCard(
                 size: size,
                 text: 'Adicionar veículo',
-                iconData: Icons.shield_outlined),
+                imageProvider: AssetImage('assets/vistoria.png')),
           ],
         ),
       ],

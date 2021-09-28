@@ -4,12 +4,12 @@ import 'componentes_temas/cores.dart';
 
 class HomeCard extends StatelessWidget {
   final Size size;
-  final IconData iconData;
+  final ImageProvider imageProvider;
   final String text;
   const HomeCard({
     Key? key,
     required this.size,
-    required this.iconData,
+    required this.imageProvider,
     required this.text,
   }) : super(key: key);
 
@@ -17,10 +17,10 @@ class HomeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-          horizontal: size.width * 0.02, vertical: size.height * 0.01),
+          horizontal: size.width * 0.01, vertical: size.height * 0.01),
       child: Container(
         height: size.height * 0.1,
-        width: size.width * 0.45,
+        width: size.width * 0.47,
         decoration: BoxDecoration(
           color: AppCores.BRANCO,
           boxShadow: [
@@ -38,21 +38,25 @@ class HomeCard extends StatelessWidget {
           child: TextButton(
             onPressed: () {},
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Flexible(
                   child: Text(
                     text,
                     style: TextStyle(
                       color: AppCores.PRETO,
-                      fontSize: 20,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
-                Icon(
-                  iconData,
-                  size: 28,
-                  color: AppCores.PRETO,
+                Container(
+                  height: size.height * 0.05,
+                  width: size.width * 0.1,
+                  child: Image(
+                    image: imageProvider,
+                    fit: BoxFit.contain,
+                  ),
                 )
               ],
             ),

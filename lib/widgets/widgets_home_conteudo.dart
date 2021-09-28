@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/custom_list.dart';
 import 'package:neo/Screen/componentes_globais/home_header_button.dart';
+import 'package:neo/Screen/componentes_globais/indique_card.dart';
 import 'package:neo/Screen/componentes_globais/neo_banner.dart';
 import 'package:neo/widgets/widgets_home_campos.dart';
 
@@ -20,7 +21,8 @@ class HomeConteudo extends StatelessWidget {
           NeoBanner(
             size: size,
           ),
-          HomeCampos(size: size)
+          HomeCampos(size: size),
+          IndiqueCard(size: size)
         ],
       ),
     );
