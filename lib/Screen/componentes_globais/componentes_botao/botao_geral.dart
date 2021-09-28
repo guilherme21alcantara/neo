@@ -14,7 +14,7 @@ class BotaoGeral extends StatelessWidget {
   final double tam;
   final Color cor;
   final FontWeight fonte;
-  final OnTap fun;
+  final Function fun;
   const BotaoGeral({
     Key key,
     this.h,
@@ -32,10 +32,7 @@ class BotaoGeral extends StatelessWidget {
         padding: EdgeInsets.symmetric(
             vertical: size.height * h, horizontal: size.width * v),
         child: GestureDetector(
-            onTap: ()
-            {
-              Get.offAll(BuscarModelo());
-            },
+            onTap: fun,
             child: Container(
                 height: size.height * 0.05,
                 decoration: BoxDecoration(
