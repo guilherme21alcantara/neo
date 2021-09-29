@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/custom_list.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+import 'package:neo/widgets/evento_card.dart';
 
 class AcompanhamentoEventosPage extends StatelessWidget {
   const AcompanhamentoEventosPage({Key? key}) : super(key: key);
@@ -19,7 +20,12 @@ class AcompanhamentoEventosPage extends StatelessWidget {
       size: size,
       widget: Container(
         child: Column(
-          children: [],
+          children: [
+            Padding(
+              padding: EdgeInsets.all(size.width * 0.05),
+              child: EventoCard(size),
+            )
+          ],
         ),
       ),
     );
