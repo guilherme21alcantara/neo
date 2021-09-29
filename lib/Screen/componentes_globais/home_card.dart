@@ -6,11 +6,13 @@ class HomeCard extends StatelessWidget {
   final Size size;
   final ImageProvider imageProvider;
   final String text;
+  final Function()? function;
   const HomeCard({
     Key? key,
     required this.size,
     required this.imageProvider,
     required this.text,
+    required this.function,
   }) : super(key: key);
 
   @override
@@ -36,7 +38,10 @@ class HomeCard extends StatelessWidget {
           padding: EdgeInsets.symmetric(
               horizontal: size.width * 0.02, vertical: size.height * 0.005),
           child: TextButton(
-            onPressed: () {},
+            style: ButtonStyle(
+                overlayColor:
+                    MaterialStateProperty.all<Color?>(AppCores.BRANCO)),
+            onPressed: function,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

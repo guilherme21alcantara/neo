@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/home_card.dart';
+import 'package:neo/Screen/cotacao/adicionar_veiculo.dart';
+import 'package:get/route_manager.dart';
 
 class HomeCampos extends StatelessWidget {
   final Size size;
@@ -13,21 +15,28 @@ class HomeCampos extends StatelessWidget {
         Column(
           children: [
             HomeCard(
-                size: size,
-                text: 'Adicionar veículo',
-                imageProvider: AssetImage('assets/adicionar_veiculo.png')),
+              size: size,
+              text: 'Adicionar veículo',
+              imageProvider: AssetImage('assets/adicionar_veiculo.png'),
+              function: () {
+                Get.offAll(() => AdicionarVeiculoPage());
+              },
+            ),
             HomeCard(
                 size: size,
                 text: 'Pagamentos',
-                imageProvider: AssetImage('assets/pagamentos.png')),
+                imageProvider: AssetImage('assets/pagamentos.png'),
+                function: () {}),
             HomeCard(
                 size: size,
                 text: 'Eventos e Sinistros',
-                imageProvider: AssetImage('assets/eventos.png')),
+                imageProvider: AssetImage('assets/eventos.png'),
+                function: () {}),
             HomeCard(
                 size: size,
                 text: 'Cancelamento',
-                imageProvider: AssetImage('assets/cancelamento.png')),
+                imageProvider: AssetImage('assets/cancelamento.png'),
+                function: () {}),
           ],
         ),
         Column(
@@ -35,19 +44,23 @@ class HomeCampos extends StatelessWidget {
             HomeCard(
                 size: size,
                 text: 'Adicionar veículo',
-                imageProvider: AssetImage('assets/adicionar_veiculo.png')),
+                imageProvider: AssetImage('assets/adicionar_veiculo.png'),
+                function: () {}),
             HomeCard(
                 size: size,
                 text: 'Adicionar veículo',
-                imageProvider: AssetImage('assets/apolice.png')),
+                imageProvider: AssetImage('assets/apolice.png'),
+                function: () {}),
             HomeCard(
                 size: size,
                 text: 'Adicionar veículo',
-                imageProvider: AssetImage('assets/camera.png')),
+                imageProvider: AssetImage('assets/camera.png'),
+                function: () {}),
             HomeCard(
                 size: size,
                 text: 'Adicionar veículo',
-                imageProvider: AssetImage('assets/vistoria.png')),
+                imageProvider: AssetImage('assets/vistoria.png'),
+                function: () {}),
           ],
         ),
       ],
