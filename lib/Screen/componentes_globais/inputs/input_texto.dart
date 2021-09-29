@@ -4,10 +4,19 @@ import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
 
 class InputTexto extends StatelessWidget {
   final double h, v;
+  final double height, width;
   final Size size;
   final String text;
   final IconData icon;
-  const InputTexto({Key key, this.h, this.v, this.size, this.text, this.icon})
+  const InputTexto(
+      {Key key,
+      this.h,
+      this.v,
+      this.size,
+      this.text,
+      this.icon,
+      this.height,
+      this.width})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -15,7 +24,8 @@ class InputTexto extends StatelessWidget {
       padding: EdgeInsets.symmetric(
           vertical: size.height * h, horizontal: size.width * v),
       child: Container(
-          height: size.height * 0.06,
+          height: height,
+          width: width,
           decoration: BoxDecoration(
               border: Border.all(),
               borderRadius: BorderRadius.all(Radius.circular(50))),

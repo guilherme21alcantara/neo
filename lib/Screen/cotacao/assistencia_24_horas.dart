@@ -24,14 +24,17 @@ class _Assistencia24HorasState extends State<Assistencia24Horas> {
       ativa: true,
       height: size.height,
       size: size,
-      widget: Column(
-        children: [
-          RotasImagens(h: 0.4, w: 1, image: AssetImage('assets/indique.jpeg')),
-          SizedBox(
-            height: size.height * 0.05,
-          ),
-          AssitenciaCampos(size),
-        ],
+      widget: Container(
+        child: Column(
+          children: [
+            RotasImagens(
+                h: 0.4, w: 1, image: AssetImage('assets/indique.jpeg')),
+            SizedBox(
+              height: size.height * 0.05,
+            ),
+            AssitenciaCampos(size),
+          ],
+        ),
       ),
     );
   }
