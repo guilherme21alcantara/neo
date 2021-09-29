@@ -3,6 +3,7 @@ import 'package:neo/Screen/componentes_globais/home_card.dart';
 import 'package:neo/Screen/cotacao/adicionar_veiculo.dart';
 import 'package:get/route_manager.dart';
 import 'package:neo/Screen/cotacao/assistencia_24_horas.dart';
+import 'package:neo/Screen/eventos_e_sinistros/eventos_e_sinistros_page.dart';
 
 class HomeCampos extends StatelessWidget {
   final Size size;
@@ -32,7 +33,9 @@ class HomeCampos extends StatelessWidget {
                 size: size,
                 text: 'Eventos e Sinistros',
                 imageProvider: AssetImage('assets/eventos.png'),
-                function: () {}),
+                function: () {
+                  Get.offAll(() => EventosESinistrosPage());
+                }),
             HomeCard(
                 size: size,
                 text: 'Cancelamento',

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/custom_list.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
-import 'package:neo/widgets/widgets_login_campos.dart';
-import 'package:neo/widgets/widgets_login_visual.dart';
+import 'package:neo/widgets/login_campos.dart';
+import 'package:neo/widgets/login_visual.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);

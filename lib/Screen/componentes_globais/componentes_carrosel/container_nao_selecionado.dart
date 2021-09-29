@@ -3,27 +3,24 @@ import 'package:flutter/widgets.dart';
 import 'package:get/route_manager.dart';
 import 'package:neo/Screen/cotacao/buscar_modelo_placa.dart';
 import 'package:neo/Screen/cotacao/cadastro.dart';
-import 'package:neo/widgets/widgets_busca_modelo_placa.dart';
+import 'package:neo/widgets/busca_modelo_placa.dart';
 
 class ContainerNaoSelect extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return 
-    GestureDetector(
-            onTap: () {
-              Get.offAll(BuscarModelo());
-            },
-      child:
-    Container(
-      height: size.height * 0.025,
-      width: size.width * 0.05,
-      decoration: BoxDecoration(
-          color: Colors.white, border: Border.all(),borderRadius: BorderRadius.circular(30)),
-    )
-    )
-    ;
+    return GestureDetector(
+        onTap: () {
+          Get.offAll(BuscarModelo());
+        },
+        child: Container(
+          height: size.height * 0.025,
+          width: size.width * 0.05,
+          decoration: BoxDecoration(
+              color: Colors.white,
+              border: Border.all(),
+              borderRadius: BorderRadius.circular(30)),
+        ));
   }
 }

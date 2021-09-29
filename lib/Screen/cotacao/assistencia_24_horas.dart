@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
 import 'package:neo/Screen/componentes_globais/custom_list.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
-import 'package:neo/widgets/widgets_assistencia_campos.dart';
+import 'package:neo/widgets/assistencia_campos.dart';
 
 class Assistencia24Horas extends StatefulWidget {
   const Assistencia24Horas({Key? key}) : super(key: key);

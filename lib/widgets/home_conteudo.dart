@@ -3,7 +3,8 @@ import 'package:neo/Screen/componentes_globais/custom_list.dart';
 import 'package:neo/Screen/componentes_globais/home_header_button.dart';
 import 'package:neo/Screen/componentes_globais/indique_card.dart';
 import 'package:neo/Screen/componentes_globais/neo_banner.dart';
-import 'package:neo/widgets/widgets_home_campos.dart';
+import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/widgets/home_campos.dart';
 
 class HomeConteudo extends StatelessWidget {
   final Size size;
@@ -17,7 +18,13 @@ class HomeConteudo extends StatelessWidget {
       ativa: true,
       widget: Column(
         children: [
-          HomeHeaderButton(size: size),
+          HomeHeaderButton(
+            size: size,
+            title: 'Roubo e Furto',
+            subtext: 'Mensal',
+            btnTxt: 'Cotar',
+            img: RoutesImagens.FIRSTIMAGE,
+          ),
           NeoBanner(
             size: size,
           ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/home_header_button.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_home.dart';
-import 'package:neo/widgets/widgets_home_conteudo.dart';
+import 'package:neo/widgets/home_conteudo.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

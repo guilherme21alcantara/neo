@@ -8,4 +8,5 @@ class AppCores {
   static HexColor PRETO = HexColor('#000000');
   static HexColor CINZA = HexColor('#a3a3a3');
   static HexColor ROSA = HexColor('#f52d6b');
+  static HexColor LARANJA = HexColor('#e38724');
 }

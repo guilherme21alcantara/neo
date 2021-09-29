@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
-import 'package:neo/widgets/widgets_lista_cotacao.dart';
+import 'package:neo/widgets/lista_cotacao.dart';
 
 class CotarCadastro extends StatefulWidget {
   const CotarCadastro({Key key}) : super(key: key);
@@ -18,7 +18,7 @@ class _CotarCadastroState extends State<CotarCadastro> {
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
-      conteudo: lista(size, true, true, true, false,false),
+      conteudo: lista(size, true, true, true, false, false),
     );
   }
 }

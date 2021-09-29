@@ -3,7 +3,7 @@ import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
 import 'package:neo/Screen/componentes_globais/custom_list.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_cotacao.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
-import 'package:neo/widgets/widgets_alterar_senha_campos.dart';
+import 'package:neo/widgets/alterar_senha_campos.dart';
 
 class AlterarSenha extends StatefulWidget {
   const AlterarSenha({Key? key}) : super(key: key);

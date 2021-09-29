@@ -48,6 +48,8 @@ class HomeCard extends StatelessWidget {
                 Flexible(
                   child: Text(
                     text,
+                    maxLines: null,
+                    softWrap: true,
                     style: TextStyle(
                       color: AppCores.PRETO,
                       fontSize: 18,
