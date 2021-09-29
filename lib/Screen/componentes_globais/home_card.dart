@@ -21,7 +21,7 @@ class HomeCard extends StatelessWidget {
       padding: EdgeInsets.symmetric(
           horizontal: size.width * 0.01, vertical: size.height * 0.01),
       child: Container(
-        height: size.height * 0.1,
+        height: size.height * 0.12,
         width: size.width * 0.47,
         decoration: BoxDecoration(
           color: AppCores.BRANCO,

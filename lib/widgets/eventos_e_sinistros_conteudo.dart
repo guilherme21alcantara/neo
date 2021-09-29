@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:neo/Screen/componentes_globais/home_card.dart';
+import 'package:neo/Screen/eventos_e_sinistros/acidente_pessoal_passageiros.dart';
 
 Widget EventosESinistrosConteudo(Size size) {
   return Row(
@@ -18,7 +20,9 @@ Widget EventosESinistrosConteudo(Size size) {
               size: size,
               text: 'Acidente pessoal de Passageiros',
               imageProvider: AssetImage('assets/eventos.png'),
-              function: () {}),
+              function: () {
+                Get.offAll(() => AcidentePessoalPassageirosPage());
+              }),
           HomeCard(
               size: size,
               text: 'Carro \nReserva',

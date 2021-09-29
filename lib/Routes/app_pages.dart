@@ -15,9 +15,12 @@ import 'package:neo/Screen/cotacao/informe_cep_trabalho.dart';
 import 'package:neo/Screen/cotacao/informe_cep_trabalho_alt.dart';
 import 'package:neo/Screen/cotacao/informe_cpf.dart';
 import 'package:neo/Screen/cotacao/opcoes_uso_veiculo.dart';
+import 'package:neo/Screen/eventos_e_sinistros/declaracao_de_veracidade.dart';
 import 'package:neo/Screen/splash.dart';
 // ignore: import_of_legacy_library_into_null_safe
 
 class AppPages {
-  static final routes = [GetPage(name: Routes.INITIAL, page: () => HomePage())];
+  static final routes = [
+    GetPage(name: Routes.INITIAL, page: () => DeclaracaoVeracidade())
+  ];
 }
