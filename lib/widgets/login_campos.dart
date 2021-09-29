@@ -7,6 +7,7 @@ import 'package:neo/Screen/componentes_globais/inputs/checkbox.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto_icon.dart';
 import 'package:get/route_manager.dart';
 import 'package:neo/Screen/conta/esqueceu_senha.dart';
+import 'package:neo/Screen/conta/home.dart';
 
 Widget camposLogin(Size size) {
   return Container(
@@ -53,6 +54,9 @@ Widget camposLogin(Size size) {
             ),
           ),
           BotaoGeral(
+            fun: () {
+          Get.offAll(HomePage());
+        },
             text: 'Entrar',
             size: size * 1.12,
             h: 0.01,

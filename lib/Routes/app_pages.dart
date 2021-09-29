@@ -21,6 +21,6 @@ import 'package:neo/Screen/splash.dart';
 
 class AppPages {
   static final routes = [
-    GetPage(name: Routes.INITIAL, page: () => DeclaracaoVeracidade())
+    GetPage(name: Routes.INITIAL, page: () => Carousel())
   ];
 }
