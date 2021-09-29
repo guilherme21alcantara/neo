@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/home_card.dart';
 import 'package:neo/Screen/cotacao/adicionar_veiculo.dart';
 import 'package:get/route_manager.dart';
+import 'package:neo/Screen/cotacao/assistencia_24_horas.dart';
 
 class HomeCampos extends StatelessWidget {
   final Size size;
@@ -43,9 +44,11 @@ class HomeCampos extends StatelessWidget {
           children: [
             HomeCard(
                 size: size,
-                text: 'Adicionar veículo',
+                text: 'Assistência 24 horas',
                 imageProvider: AssetImage('assets/adicionar_veiculo.png'),
-                function: () {}),
+                function: () {
+                  Get.offAll(() => Assistencia24Horas());
+                }),
             HomeCard(
                 size: size,
                 text: 'Adicionar veículo',

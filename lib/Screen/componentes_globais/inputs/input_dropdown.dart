@@ -31,7 +31,7 @@ class _CustomDropdownState extends State<CustomDropdown> {
           width: widget.size.width * 0.84,
           decoration: BoxDecoration(
               border: Border.all(),
-              borderRadius: BorderRadius.all(Radius.circular(20))),
+              borderRadius: BorderRadius.all(Radius.circular(50))),
           child: Padding(
             padding: EdgeInsets.only(
                 right: widget.size.width * 0.05,
