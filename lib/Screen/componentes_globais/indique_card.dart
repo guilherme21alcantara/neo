@@ -45,17 +45,7 @@ class IndiqueCard extends StatelessWidget {
                     style: ButtonStyle(
                         overlayColor:
                             MaterialStateProperty.all<Color?>(AppCores.BRANCO)),
-                    onPressed: () {
-                      showDialog(
-                          context: context,
-                          builder: (BuildContext context) => PopUpColorido(
-                                  size,
-                                  'Você tem certeza disso?',
-                                  'Para realizar a alteração solicitada você deve Pagar estar em dia com todos os pagamentos. Para isso regularize os valores vencidos e retorne para a alteração.',
-                                  'Pagar', () {
-                                Navigator.pop(context, 'OK');
-                              }));
-                    },
+                    onPressed: () {},
                     child: Container(
                         height: size.height * 0.03,
                         decoration: BoxDecoration(

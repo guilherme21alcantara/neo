@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neo/Screen/cancelamento/cancelamento_page.dart';
 import 'package:neo/Screen/componentes_globais/home_card.dart';
 import 'package:neo/Screen/cotacao/adicionar_veiculo.dart';
 import 'package:get/route_manager.dart';
@@ -41,7 +42,9 @@ class HomeCampos extends StatelessWidget {
                 size: size,
                 text: 'Cancelamento',
                 imageProvider: AssetImage('assets/cancelamento.png'),
-                function: () {}),
+                function: () {
+                  Get.offAll(() => CancelamentoPage());
+                }),
           ],
         ),
         Column(
