@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:neo/Screen/componentes_globais/componentes_botao/botao_geral.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_dropdown.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
+import 'package:neo/Screen/eventos_e_sinistros/regras_utilizacao.dart';
 
 Widget IncidenteForm(Size size) {
   List<String> optionsList = ['opção 1', 'opção 2'];
@@ -102,7 +104,7 @@ Widget IncidenteForm(Size size) {
                 color: AppCores.PRETO,
                 decoration: TextDecoration.underline),
           ),
-          onPressed: () => {}),
+          onPressed: () => {Get.offAll(() => RegrasUtilizacao())}),
     ],
   );
 }
