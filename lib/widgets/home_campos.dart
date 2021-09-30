@@ -4,6 +4,7 @@ import 'package:neo/Screen/cotacao/adicionar_veiculo.dart';
 import 'package:get/route_manager.dart';
 import 'package:neo/Screen/eventos_e_sinistros/assistencia_24_horas.dart';
 import 'package:neo/Screen/eventos_e_sinistros/eventos_e_sinistros_page.dart';
+import 'package:neo/Screen/vistoria.dart';
 
 class HomeCampos extends StatelessWidget {
   final Size size;
@@ -54,17 +55,19 @@ class HomeCampos extends StatelessWidget {
                 }),
             HomeCard(
                 size: size,
-                text: 'Adicionar veículo',
+                text: 'Minha\nApólice',
                 imageProvider: AssetImage('assets/apolice.png'),
                 function: () {}),
             HomeCard(
                 size: size,
-                text: 'Adicionar veículo',
+                text: 'Vistoria',
                 imageProvider: AssetImage('assets/camera.png'),
-                function: () {}),
+                function: () {
+                  Get.offAll(() => VistoriaPage());
+                }),
             HomeCard(
                 size: size,
-                text: 'Adicionar veículo',
+                text: 'Solicitações',
                 imageProvider: AssetImage('assets/vistoria.png'),
                 function: () {}),
           ],
