@@ -7,6 +7,7 @@ import 'package:neo/Screen/componentes_globais/home_header_button.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 import 'package:neo/Screen/eventos_e_sinistros/acompanhamento_eventos.dart';
+import 'package:neo/Screen/eventos_e_sinistros/roubo_furto.dart';
 import 'package:neo/widgets/eventos_e_sinistros_conteudo.dart';
 
 class EventosESinistrosPage extends StatelessWidget {
@@ -28,11 +29,15 @@ class EventosESinistrosPage extends StatelessWidget {
       widget: Column(
         children: [
           HomeHeaderButton(
-              size: size,
-              title: 'Roubo e Furto',
-              subtext: '',
-              btnTxt: 'Abrir Evento',
-              img: RoutesImagens.FIRSTIMAGE),
+            size: size,
+            title: 'Roubo e Furto',
+            subtext: '',
+            btnTxt: 'Abrir Evento',
+            img: RoutesImagens.FIRSTIMAGE,
+            function: () {
+              Get.offAll(() => RouboFurtoPage());
+            },
+          ),
           EventosESinistrosConteudo(size),
           Padding(
             padding: EdgeInsets.all(size.width * 0.04),

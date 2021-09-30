@@ -24,6 +24,7 @@ class HomeConteudo extends StatelessWidget {
             subtext: 'Mensal',
             btnTxt: 'Cotar',
             img: RoutesImagens.FIRSTIMAGE,
+            function: () {},
           ),
           NeoBanner(
             size: size,

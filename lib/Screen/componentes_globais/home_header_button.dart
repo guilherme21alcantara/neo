@@ -9,13 +9,15 @@ class HomeHeaderButton extends StatelessWidget {
   final String subtext;
   final String btnTxt;
   final String img;
+  final Function()? function;
   const HomeHeaderButton(
       {Key? key,
       required this.size,
       required this.title,
       required this.subtext,
       required this.btnTxt,
-      required this.img})
+      required this.img,
+      required this.function})
       : super(key: key);
 
   @override
@@ -67,7 +69,7 @@ class HomeHeaderButton extends StatelessWidget {
                     style: ButtonStyle(
                         overlayColor:
                             MaterialStateProperty.all<Color?>(AppCores.BRANCO)),
-                    onPressed: () {},
+                    onPressed: function,
                     child: Container(
                         height: size.height * 0.03,
                         decoration: BoxDecoration(
