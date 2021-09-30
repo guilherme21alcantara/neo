@@ -89,7 +89,10 @@ class HomeHeaderButton extends StatelessWidget {
                 ],
               ),
             ),
-            RotasImagens(h: 0.2, w: 0.45, image: AssetImage(img))
+            Image(
+                image: ResizeImage(AssetImage(img),
+                    height: (size.height * 0.2).floor(),
+                    width: (size.width * 0.4).floor()))
           ],
         ),
       ),

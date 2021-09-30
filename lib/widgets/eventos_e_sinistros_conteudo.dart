@@ -5,6 +5,7 @@ import 'package:neo/Screen/componentes_globais/home_card.dart';
 import 'package:neo/Screen/eventos_e_sinistros/acidente_pessoal_passageiros.dart';
 import 'package:neo/Screen/eventos_e_sinistros/assistencia_24_horas.dart';
 import 'package:neo/Screen/eventos_e_sinistros/carro_reserva.dart';
+import 'package:neo/Screen/eventos_e_sinistros/colisao_a_terceiros.dart';
 
 Widget EventosESinistrosConteudo(Size size) {
   return Row(
@@ -47,7 +48,9 @@ Widget EventosESinistrosConteudo(Size size) {
               size: size,
               text: 'Colisão a Terceiros',
               imageProvider: AssetImage('assets/adicionar_veiculo.png'),
-              function: () {}),
+              function: () {
+                Get.offAll(() => ColisaoTerceirosPage());
+              }),
           HomeCard(
               size: size,
               text: 'Incêndio e Fenômenos Naturais',
