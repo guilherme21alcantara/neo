@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neo/Screen/componentes_globais/popups/popup_colorido.dart';
 import 'package:neo/Screen/componentes_globais/popups/popup_simples.dart';
 
 import 'componentes_temas/cores.dart';
@@ -47,13 +48,13 @@ class IndiqueCard extends StatelessWidget {
                     onPressed: () {
                       showDialog(
                           context: context,
-                          builder: (BuildContext context) => PopUpSimples(
+                          builder: (BuildContext context) => PopUpColorido(
                                   size,
                                   'Você tem certeza disso?',
-                                  'Uma vez cancelado você poderá perder os benefícios de ser um cliente Premium com descontos e vantagens!',
-                                  'Voltar', () {
+                                  'Para realizar a alteração solicitada você deve Pagar estar em dia com todos os pagamentos. Para isso regularize os valores vencidos e retorne para a alteração.',
+                                  'Pagar', () {
                                 Navigator.pop(context, 'OK');
-                              }, txtBtnTitle: 'Confirmar o Cancelamento'));
+                              }));
                     },
                     child: Container(
                         height: size.height * 0.03,
