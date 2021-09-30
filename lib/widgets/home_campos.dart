@@ -5,6 +5,7 @@ import 'package:neo/Screen/cotacao/adicionar_veiculo.dart';
 import 'package:get/route_manager.dart';
 import 'package:neo/Screen/eventos_e_sinistros/assistencia_24_horas.dart';
 import 'package:neo/Screen/eventos_e_sinistros/eventos_e_sinistros_page.dart';
+import 'package:neo/Screen/solicitacoes/solicitacoes_page.dart';
 import 'package:neo/Screen/vistoria/vistoria_page.dart';
 
 class HomeCampos extends StatelessWidget {
@@ -72,7 +73,9 @@ class HomeCampos extends StatelessWidget {
                 size: size,
                 text: 'Solicitações',
                 imageProvider: AssetImage('assets/vistoria.png'),
-                function: () {}),
+                function: () {
+                  Get.offAll(() => SolicitacoesPage());
+                }),
           ],
         ),
       ],

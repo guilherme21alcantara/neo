@@ -1,13 +1,14 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
-import 'package:neo/Screen/componentes_globais/custom_box.dart';
-import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
-import 'package:neo/widgets/incidente_form.dart';
 
-Widget EventoCard(Size size) {
+Widget AcompanhamentoSolicitacaoCard(Size size) {
   return Padding(
-    padding: EdgeInsets.only(bottom: size.height * 0.02),
+    padding: EdgeInsets.only(
+        top: size.height * 0.01,
+        bottom: size.height * 0.01,
+        left: size.width * 0.03,
+        right: size.width * 0.03),
     child: Container(
       height: size.height * 0.21,
       width: size.width,
@@ -17,7 +18,7 @@ Widget EventoCard(Size size) {
       child: Row(
         children: [
           Container(
-            width: size.width * 0.5,
+            width: size.width * 0.8,
             child: Padding(
               padding: EdgeInsets.all(10),
               child: Column(
@@ -38,7 +39,14 @@ Widget EventoCard(Size size) {
                     ),
                   ),
                   Text(
-                    'Evento: Assistência a Vidros',
+                    'Solicitação: Troca de Titularidade',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: AppCores.ROXOPRINCIPAL,
+                    ),
+                  ),
+                  Text(
+                    'Expira em: 2 dias',
                     style: TextStyle(
                       fontSize: 20,
                       color: AppCores.ROXOPRINCIPAL,
@@ -77,10 +85,6 @@ Widget EventoCard(Size size) {
             children: [
               IconButton(
                   onPressed: () {}, icon: Icon(Icons.backspace_outlined)),
-              RotasImagens(
-                  h: 0.12,
-                  w: 0.35,
-                  image: AssetImage(RoutesImagens.FIRSTIMAGE)),
             ],
           )
         ],

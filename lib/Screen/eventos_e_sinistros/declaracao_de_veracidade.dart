@@ -16,8 +16,7 @@ class _DeclaracaoVeracidadeState extends State<DeclaracaoVeracidade> {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(
-        conteudo: _corpo(size), title: 'Eventos e Sinistros');
+    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Declaração');
   }
 
   Widget _corpo(Size size) {

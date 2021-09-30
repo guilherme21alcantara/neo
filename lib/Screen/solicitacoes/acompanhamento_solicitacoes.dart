@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/custom_list.dart';
+import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
-import 'package:neo/widgets/evento_card.dart';
+import 'package:neo/widgets/acompanhamento_solicitacao_card.dart';
+import 'package:neo/widgets/solicitacoes_card.dart';
 
-class AcompanhamentoEventosPage extends StatelessWidget {
-  const AcompanhamentoEventosPage({Key? key}) : super(key: key);
+class AcompanhamentoSolicitacoes extends StatelessWidget {
+  const AcompanhamentoSolicitacoes({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size), title: 'Acompanhamento de Eventos');
+        conteudo: _corpo(size), title: 'Acompanhamento de Solicitações');
   }
 
   Widget _corpo(Size size) {
@@ -21,14 +23,7 @@ class AcompanhamentoEventosPage extends StatelessWidget {
       size: size,
       widget: Container(
         child: Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.all(size.width * 0.05),
-              child: Column(
-                children: [EventoCard(size), EventoCard(size)],
-              ),
-            )
-          ],
+          children: [AcompanhamentoSolicitacaoCard(size)],
         ),
       ),
     );

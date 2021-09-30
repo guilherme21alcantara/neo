@@ -17,10 +17,13 @@ import 'package:neo/Screen/cotacao/informe_cpf.dart';
 import 'package:neo/Screen/cotacao/opcoes_uso_veiculo.dart';
 import 'package:neo/Screen/eventos_e_sinistros/declaracao_de_veracidade.dart';
 import 'package:neo/Screen/eventos_e_sinistros/eventos_e_sinistros_page.dart';
+import 'package:neo/Screen/solicitacoes/solicitacoes_page.dart';
 import 'package:neo/Screen/splash.dart';
 import 'package:neo/Screen/sucesso_page.dart';
 // ignore: import_of_legacy_library_into_null_safe
 
 class AppPages {
-  static final routes = [GetPage(name: Routes.INITIAL, page: () => HomePage())];
+  static final routes = [
+    GetPage(name: Routes.INITIAL, page: () => SolicitacoesPage())
+  ];
 }
