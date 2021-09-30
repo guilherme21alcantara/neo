@@ -6,6 +6,7 @@ import 'package:neo/Screen/eventos_e_sinistros/acidente_pessoal_passageiros.dart
 import 'package:neo/Screen/eventos_e_sinistros/assistencia_24_horas.dart';
 import 'package:neo/Screen/eventos_e_sinistros/carro_reserva.dart';
 import 'package:neo/Screen/eventos_e_sinistros/colisao_a_terceiros.dart';
+import 'package:neo/Screen/eventos_e_sinistros/incendio_fenomenos_naturais.dart';
 
 Widget EventosESinistrosConteudo(Size size) {
   return Row(
@@ -55,7 +56,9 @@ Widget EventosESinistrosConteudo(Size size) {
               size: size,
               text: 'Incêndio e Fenômenos Naturais',
               imageProvider: AssetImage('assets/camera.png'),
-              function: () {}),
+              function: () {
+                Get.offAll(() => IncendioFenomenosNaturaisPage());
+              }),
         ],
       ),
     ],
