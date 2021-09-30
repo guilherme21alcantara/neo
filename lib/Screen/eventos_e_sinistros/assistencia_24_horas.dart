@@ -16,7 +16,8 @@ class _Assistencia24HorasState extends State<Assistencia24Horas> {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Cotação');
+    return ScaffoldPrincipal(
+        conteudo: _corpo(size), title: 'Eventos e Sinistros');
   }
 
   Widget _corpo(Size size) {
