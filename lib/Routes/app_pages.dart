@@ -22,7 +22,5 @@ import 'package:neo/Screen/sucesso_page.dart';
 // ignore: import_of_legacy_library_into_null_safe
 
 class AppPages {
-  static final routes = [
-    GetPage(name: Routes.INITIAL, page: () => SucessoPage())
-  ];
+  static final routes = [GetPage(name: Routes.INITIAL, page: () => HomePage())];
 }
