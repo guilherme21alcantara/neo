@@ -7,6 +7,7 @@ import 'package:neo/Screen/eventos_e_sinistros/assistencia_24_horas.dart';
 import 'package:neo/Screen/eventos_e_sinistros/carro_reserva.dart';
 import 'package:neo/Screen/eventos_e_sinistros/colisao_a_terceiros.dart';
 import 'package:neo/Screen/eventos_e_sinistros/incendio_fenomenos_naturais.dart';
+import 'package:neo/Screen/eventos_e_sinistros/vidros.dart';
 
 Widget EventosESinistrosConteudo(Size size) {
   return Row(
@@ -44,7 +45,9 @@ Widget EventosESinistrosConteudo(Size size) {
               size: size,
               text: 'Vidros',
               imageProvider: AssetImage('assets/adicionar_veiculo.png'),
-              function: () {}),
+              function: () {
+                Get.offAll(() => VidrosPage());
+              }),
           HomeCard(
               size: size,
               text: 'Colisão a Terceiros',
