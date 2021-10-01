@@ -7,6 +7,7 @@ import 'package:neo/Screen/componentes_globais/inputs/input_dropdown.dart';
 import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
 import 'package:neo/Screen/eventos_e_sinistros/regras_utilizacao.dart';
+import 'package:neo/widgets/termos_page.dart';
 
 Widget TrocaTitularidadeConclusaoCampos(Size size) {
   return Column(
@@ -60,6 +61,9 @@ Widget TrocaTitularidadeConclusaoCampos(Size size) {
           ),
         ),
       ),
+      SizedBox(
+        height: size.height * 0.01,
+      ),
       Padding(
         padding: EdgeInsets.symmetric(
             horizontal: size.width * 0.1, vertical: size.height * 0.01),
@@ -82,11 +86,22 @@ Widget TrocaTitularidadeConclusaoCampos(Size size) {
                 icon: Image.asset(RoutesImagens.BUTTON),
                 iconSize: 30,
                 onPressed: () {
-                  // Get.offAll();
+                  Get.offAll(TermosPage(
+                    title: 'Troca de titularidade',
+                    backBtnRoute: '',
+                    content: 'jose@gmail.com',
+                    termsTxt:
+                        'Assinando você concorda com os Termos da Troca de Titularidade',
+                    btnFunction: () {},
+                    formTitle: '',
+                  ));
                 }),
           ],
         ),
-      )
+      ),
+      SizedBox(
+        height: size.height * 0.02,
+      ),
     ],
   );
 }

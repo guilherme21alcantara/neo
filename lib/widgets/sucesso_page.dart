@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
 
-import 'componentes_globais/componentes_temas/imagens.dart';
-import 'componentes_globais/custom_list.dart';
-import 'componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
-import 'componentes_globais/scaffold_principal.dart';
+import '../Screen/componentes_globais/componentes_temas/imagens.dart';
+import '../Screen/componentes_globais/custom_list.dart';
+import '../Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import '../Screen/componentes_globais/scaffold_principal.dart';
 
 class SucessoPage extends StatefulWidget {
-  const SucessoPage({Key? key}) : super(key: key);
+  final String title;
+  final String content;
+  const SucessoPage({Key? key, required this.title, required this.content})
+      : super(key: key);
 
   @override
   _SucessoPageState createState() => _SucessoPageState();
@@ -29,7 +32,7 @@ class _SucessoPageState extends State<SucessoPage> {
         ),
         centerTitle: true,
         title: Text(
-          'Sucesso',
+          widget.title,
           style: TextStyle(color: AppCores.PRETO, fontWeight: FontWeight.w800),
         ),
         backgroundColor: AppCores.BRANCO,
@@ -54,9 +57,9 @@ class _SucessoPageState extends State<SucessoPage> {
       widget: Container(
         child: Column(
           children: [
-            RotasImagens(h: 0.3, image: AssetImage(RoutesImagens.FIRSTIMAGE)),
+            RotasImagens(h: 0.3, image: AssetImage(RoutesImagens.SECONDIMAGE)),
             Container(
-              height: size.height * 0.7,
+              height: size.height,
               width: size.width,
               decoration: BoxDecoration(
                   color: AppCores.ROXOPRINCIPAL,
@@ -66,29 +69,17 @@ class _SucessoPageState extends State<SucessoPage> {
                 children: [
                   Padding(
                     padding: EdgeInsets.symmetric(
-                        horizontal: size.width * 0.1,
-                        vertical: size.height * 0.03),
-                    child: Text(
-                      'XXXXXXX com sucesso',
-                      style: TextStyle(
-                          color: AppCores.BRANCO,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(
-                        vertical: size.height * 0.01,
+                        vertical: size.height * 0.02,
                         horizontal: size.width * 0.08),
                     child: Container(
-                      height: size.height * 0.15,
+                      height: size.height * 0.8,
                       width: size.width,
                       child: Padding(
                         padding: EdgeInsets.symmetric(
                           horizontal: size.width * 0.02,
                         ),
                         child: Text(
-                          'Agora é só aguardar o envio do nosso email ou notiﬁcação conﬁrmando a realização da sua vistoria dentro dos padrões indicados.',
+                          'texto 1\ntexto 2',
                           textAlign: TextAlign.center,
                           style:
                               TextStyle(fontSize: 18, color: AppCores.BRANCO),
@@ -98,8 +89,8 @@ class _SucessoPageState extends State<SucessoPage> {
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(
-                        horizontal: size.width * 0.1,
-                        vertical: size.height * 0.025),
+                      horizontal: size.width * 0.1,
+                    ),
                     child: Column(
                       children: [
                         Text(
@@ -125,7 +116,7 @@ class _SucessoPageState extends State<SucessoPage> {
                   Padding(
                     padding: EdgeInsets.symmetric(
                         horizontal: size.width * 0.2,
-                        vertical: size.height * 0.02),
+                        vertical: size.height * 0.01),
                     child: GestureDetector(
                         onTap: () {},
                         child: Container(
