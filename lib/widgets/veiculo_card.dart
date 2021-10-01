@@ -1,14 +1,19 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/Screen/componentes_globais/custom_box.dart';
+import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/Screen/solicitacoes/troca_titularidade.dart';
+import 'package:neo/widgets/incidente_form.dart';
 
-Widget AcompanhamentoSolicitacaoCard(Size size) {
+Widget VeiculoCard(Size size, bool ativo) {
   return Padding(
     padding: EdgeInsets.only(
         top: size.height * 0.01,
         bottom: size.height * 0.01,
-        left: size.width * 0.03,
-        right: size.width * 0.03),
+        left: size.width * 0.05,
+        right: size.width * 0.05),
     child: Container(
       height: size.height * 0.21,
       width: size.width,
@@ -18,7 +23,7 @@ Widget AcompanhamentoSolicitacaoCard(Size size) {
       child: Row(
         children: [
           Container(
-            width: size.width * 0.8,
+            width: size.width * 0.5,
             child: Padding(
               padding: EdgeInsets.all(10),
               child: Column(
@@ -32,21 +37,14 @@ Widget AcompanhamentoSolicitacaoCard(Size size) {
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
+                    'PALIO ATRACTIVE 2012/2013',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: AppCores.ROXOPRINCIPAL,
+                    ),
+                  ),
+                  Text(
                     'HES-4843',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: AppCores.ROXOPRINCIPAL,
-                    ),
-                  ),
-                  Text(
-                    'Solicitação: Troca de Titularidade',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: AppCores.ROXOPRINCIPAL,
-                    ),
-                  ),
-                  Text(
-                    'Expira em: 2 dias',
                     style: TextStyle(
                       fontSize: 20,
                       color: AppCores.ROXOPRINCIPAL,
@@ -56,10 +54,12 @@ Widget AcompanhamentoSolicitacaoCard(Size size) {
                     style: ButtonStyle(
                         overlayColor:
                             MaterialStateProperty.all<Color?>(AppCores.BRANCO)),
-                    onPressed: () {},
+                    onPressed: () {
+                      (ativo) ? Get.offAll(TrocaTitularidadePage()) : () {};
+                    },
                     child: Container(
                         height: size.height * 0.03,
-                        width: size.width * 0.6,
+                        width: size.width * 0.4,
                         decoration: BoxDecoration(
                             color: AppCores.ROXOPRINCIPAL,
                             borderRadius:
@@ -69,7 +69,7 @@ Widget AcompanhamentoSolicitacaoCard(Size size) {
                               horizontal: size.width * 0.01),
                           child: Center(
                             child: Text(
-                              'Aguardando novo titular',
+                              (ativo) ? 'Ativo' : 'Inativo',
                               style: TextStyle(
                                   fontSize: 14, color: AppCores.BRANCO),
                             ),
@@ -80,13 +80,8 @@ Widget AcompanhamentoSolicitacaoCard(Size size) {
               ),
             ),
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              IconButton(
-                  onPressed: () {}, icon: Icon(Icons.backspace_outlined)),
-            ],
-          )
+          RotasImagens(
+              h: 0.15, w: 0.35, image: AssetImage(RoutesImagens.FIRSTIMAGE))
         ],
       ),
     ),
