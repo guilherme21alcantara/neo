@@ -34,7 +34,7 @@ Widget visual(Size size) {
             cor: AppCores.PRETO,
             bold: FontWeight.normal,
           ),
-          SizedBox(height: size.height * 0.03),
+          
         ],
       ));
 }

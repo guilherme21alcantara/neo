@@ -16,7 +16,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Entrar');
+    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Entrar', rota: '',);
   }
 
   Widget _corpo(Size size) {

@@ -32,6 +32,6 @@ class _InformeCEPTrabalhoAltState extends State<InformeCEPTrabalhoAlt> {
           size: size,
           title: INFORMECEP.TRABALHO,
           temCampoInfo: false,
-        ));
+        ), rota: '',);
   }
 }

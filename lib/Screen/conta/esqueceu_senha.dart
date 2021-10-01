@@ -22,7 +22,7 @@ class _EsqueceuSenhaPageState extends State<EsqueceuSenhaPage> {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size), title: 'Esqueci minha senha');
+        conteudo: _corpo(size), title: 'Esqueci minha senha', rota: '',);
   }
 
   Widget _corpo(Size size) {

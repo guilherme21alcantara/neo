@@ -22,6 +22,6 @@ class _InformeCEPPernoitaState extends State<InformeCEPPernoita> {
           size: size,
           title: INFORMECEP.PERNOITA,
           temCampoInfo: true,
-        ));
+        ), rota: '',);
   }
 }

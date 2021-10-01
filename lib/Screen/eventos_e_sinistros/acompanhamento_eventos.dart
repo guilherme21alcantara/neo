@@ -11,7 +11,7 @@ class AcompanhamentoEventosPage extends StatelessWidget {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size), title: 'Acompanhamento de Eventos');
+        conteudo: _corpo(size), title: 'Acompanhamento de Eventos', rota: '',);
   }
 
   Widget _corpo(Size size) {

@@ -8,4 +8,6 @@ abstract class CADASTRO {
   static const PLACA = 'Qual a placa do seu veículo?';
   //botao
   static const PROXIMO = 'Próximo';
+  static const ENTRAR = 'Já possui uma conta?';
+  static const ENTRARCLICK = 'Entrar !';
 }

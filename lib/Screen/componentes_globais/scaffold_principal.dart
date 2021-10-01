@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:neo/Routes/app_routes.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-
-import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
+import 'package:get/route_manager.dart';
 
 class ScaffoldPrincipal extends StatelessWidget {
   final Widget conteudo;
   final String title;
+  final String rota;
   ScaffoldPrincipal({
     Key? key,
     required this.conteudo,
     required this.title,
+    required this.rota
   }) : super(key: key);
 
   @override
@@ -32,6 +35,7 @@ class ScaffoldPrincipal extends StatelessWidget {
         ),
         backgroundColor: AppCores.BRANCO,
         leading: BackButton(
+          onPressed: (){Get.toNamed(rota);},
           color: AppCores.PRETO,
         ),
       ),

@@ -44,6 +44,7 @@ class CustomTextButton extends StatelessWidget {
                     style: TextStyle(
                         color: AppCores.ROXOPRINCIPAL,
                         decoration: TextDecoration.underline,
+                        fontWeight: FontWeight.bold,
                         decorationColor: AppCores.ROXOPRINCIPAL),
                   )),
             )

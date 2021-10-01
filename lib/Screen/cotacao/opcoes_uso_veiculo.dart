@@ -22,7 +22,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
-      conteudo: _corpo(size),
+      conteudo: _corpo(size), rota: '',
       
     );
   }

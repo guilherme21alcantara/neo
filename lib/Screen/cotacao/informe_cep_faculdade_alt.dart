@@ -26,6 +26,6 @@ class _InformeCEPFaculdadeAltState extends State<InformeCEPFaculdadeAlt> {
           size: size,
           title: INFORMECEP.FACULDADE,
           temCampoInfo: false,
-        ));
+        ), rota: '',);
   }
 }

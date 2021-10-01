@@ -18,7 +18,7 @@ class _AlterarSenhaState extends State<AlterarSenha> {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size), title: 'Alteração de senha');
+        conteudo: _corpo(size), title: 'Alteração de senha', rota: '',);
   }
 
   Widget _corpo(Size size) {

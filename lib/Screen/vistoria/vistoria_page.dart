@@ -14,7 +14,7 @@ class VistoriaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Autovistoria');
+    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Autovistoria', rota: '',);
   }
 
   Widget _corpo(Size size) {

@@ -11,7 +11,7 @@ class BuscarModelo extends StatelessWidget {
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
-      conteudo: lista(size, true, false, false, false, true),
+      conteudo: lista(size, true, false, false, false, true), rota: '',
     );
   }
 }

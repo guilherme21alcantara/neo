@@ -32,6 +32,6 @@ class _InformeCEPTrabalhoState extends State<InformeCEPTrabalho> {
           size: size,
           title: INFORMECEP.TRABALHO,
           temCampoInfo: true,
-        ));
+        ), rota: '',);
   }
 }

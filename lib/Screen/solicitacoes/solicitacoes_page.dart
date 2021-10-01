@@ -16,7 +16,7 @@ class SolicitacoesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Solicitações');
+    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Solicitações', rota: '',);
   }
 
   Widget _corpo(Size size) {

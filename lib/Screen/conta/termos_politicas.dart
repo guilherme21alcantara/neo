@@ -11,7 +11,7 @@ class TermosPoliticas extends StatelessWidget {
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
       title: TITULOS.CONTA,
-      conteudo: _corpo(size),
+      conteudo: _corpo(size), rota: '',
     );
   }
 

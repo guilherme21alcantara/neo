@@ -15,7 +15,7 @@ class CancelamentoPage extends StatelessWidget {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size, context), title: 'Eventos e Sinistros');
+        conteudo: _corpo(size, context), title: 'Eventos e Sinistros', rota: '',);
   }
 
   Widget _corpo(Size size, BuildContext context) {

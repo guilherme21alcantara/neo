@@ -13,7 +13,7 @@ class AcompanhamentoSolicitacoes extends StatelessWidget {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size), title: 'Acompanhamento de Solicitações');
+        conteudo: _corpo(size), title: 'Acompanhamento de Solicitações', rota: '',);
   }
 
   Widget _corpo(Size size) {

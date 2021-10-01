@@ -18,7 +18,7 @@ class EventosESinistrosPage extends StatelessWidget {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size), title: 'Eventos e Sinistros');
+        conteudo: _corpo(size), title: 'Eventos e Sinistros', rota: '',);
   }
 
   Widget _corpo(Size size) {

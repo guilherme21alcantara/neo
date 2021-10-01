@@ -17,6 +17,6 @@ class InformeCEPPernoitaAlt extends StatelessWidget {
           size: size,
           title: INFORMECEP.PERNOITA,
           temCampoInfo: false,
-        ));
+        ), rota: '',);
   }
 }

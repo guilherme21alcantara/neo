@@ -1,5 +1,6 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
+import 'package:neo/Routes/app_routes.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 import 'package:neo/widgets/lista_cotacao.dart';
@@ -17,6 +18,7 @@ class _CotarCadastroState extends State<CotarCadastro> {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
+      rota: Routes.INITIAL,
       title: TITULOS.COTACAO,
       conteudo: lista(size, true, true, true, false, false),
     );

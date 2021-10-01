@@ -18,7 +18,7 @@ class _InformeCPFState extends State<InformeCPF> {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(title: TITULOS.COTACAO, conteudo: _corpo(size));
+    return ScaffoldPrincipal(title: TITULOS.COTACAO, conteudo: _corpo(size), rota: '',);
   }
 
   Widget _corpo(Size size) {

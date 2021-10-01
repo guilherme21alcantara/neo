@@ -14,7 +14,7 @@ class _splashState extends State<splash> {
     Timer(
         Duration(seconds: 3),
         () => Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (BuildContext context) => Scaffold())));
+            MaterialPageRoute(builder: (BuildContext context) => Carousel())));
   }
 
   @override
