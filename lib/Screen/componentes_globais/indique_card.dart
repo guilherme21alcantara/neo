@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:neo/Screen/componentes_globais/popups/popup_colorido.dart';
 import 'package:neo/Screen/componentes_globais/popups/popup_simples.dart';
+import 'package:neo/Screen/indique_ganhe.dart';
 
 import 'componentes_temas/cores.dart';
 import 'componentes_temas/imagens.dart';
@@ -45,7 +47,9 @@ class IndiqueCard extends StatelessWidget {
                     style: ButtonStyle(
                         overlayColor:
                             MaterialStateProperty.all<Color?>(AppCores.BRANCO)),
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.offAll(IndiqueGanhePage());
+                    },
                     child: Container(
                         height: size.height * 0.03,
                         decoration: BoxDecoration(

@@ -7,6 +7,7 @@ import 'package:neo/Screen/componentes_globais/indique_card.dart';
 import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
 import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 import 'package:neo/Screen/solicitacoes/acompanhamento_solicitacoes.dart';
+import 'package:neo/Screen/solicitacoes/selecionar_veiculo.dart';
 import 'package:neo/widgets/solicitacoes_card.dart';
 
 class SolicitacoesPage extends StatelessWidget {
@@ -16,7 +17,11 @@ class SolicitacoesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Solicitações', rota: '',);
+    return ScaffoldPrincipal(
+      conteudo: _corpo(size),
+      title: 'Solicitações',
+      rota: '',
+    );
   }
 
   Widget _corpo(Size size) {
@@ -36,7 +41,9 @@ class SolicitacoesPage extends StatelessWidget {
                 size: size,
                 title: 'Troca de Titularidade',
                 img: RoutesImagens.FIRSTIMAGE,
-                function: () {}),
+                function: () {
+                  Get.offAll(SelecionarVeiculoPage());
+                }),
             SolicitacoesCard(
                 size: size,
                 title: 'Alteração de Coberturas',
