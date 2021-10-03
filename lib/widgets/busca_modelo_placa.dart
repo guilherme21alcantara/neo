@@ -15,6 +15,7 @@ import 'package:neo/Screen/cotacao/opcoes_uso_veiculo.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 import 'package:get/route_manager.dart';
+
 Widget modelo(Size size) {
   return Container(
       color: AppCores.BACKGROUND,
@@ -72,22 +73,19 @@ Widget modelo(Size size) {
                   SizedBox(height: size.height * 0.01),
                   CustomDropdown(
                       size: size, text: 'Modelo', optionsList: ['optionsList']),
-                    
-                    Container
-                    (
-                      decoration: BoxDecoration(border: Border.all(color: AppCores.ROXOPRINCIPAL),
-                      borderRadius: BorderRadius.all(Radius.circular(20))),
-                      height: size.height * 0.05 ,
-                      width: size.width * 0.1,
-                      child: IconButton(
-                              icon: Image.asset(RoutesImagens.BUTTON),
-                              iconSize: 30,
-                              onPressed: () {
-                                Get.offAll(BuscarPlaca());  
-                              }),
-                       
-                    ),
-                  
+                  Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(color: AppCores.ROXOPRINCIPAL),
+                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                    height: size.height * 0.05,
+                    width: size.width * 0.1,
+                    child: IconButton(
+                        icon: Image.asset(RoutesImagens.BUTTON),
+                        iconSize: 30,
+                        onPressed: () {
+                          Get.offAll(BuscarPlaca());
+                        }),
+                  ),
                 ],
               )),
           SizedBox(height: size.height * 0.32),
