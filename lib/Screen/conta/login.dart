@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/custom_list.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 import 'package:neo/widgets/login_campos.dart';
 import 'package:neo/widgets/login_visual.dart';
 
@@ -16,7 +16,11 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Entrar', rota: '',);
+    return ScaffoldPrincipal(
+      conteudo: _corpo(size),
+      title: 'Entrar',
+      rota: '',
+    );
   }
 
   Widget _corpo(Size size) {

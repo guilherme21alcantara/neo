@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:neo/Screen/componentes_globais/componentes_botao/botao_geral.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
-import 'package:neo/Screen/componentes_globais/custom_list.dart';
-import 'package:neo/Screen/componentes_globais/popups/popup_simples.dart';
-import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_cotacao.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/popups/popup_simples.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_cotacao.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
+
 import 'package:neo/widgets/esqueceu_senha_campos.dart';
 
 class EsqueceuSenhaPage extends StatefulWidget {
@@ -22,7 +21,10 @@ class _EsqueceuSenhaPageState extends State<EsqueceuSenhaPage> {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size), title: 'Esqueci minha senha', rota: '',);
+      conteudo: _corpo(size),
+      title: 'Esqueci minha senha',
+      rota: '',
+    );
   }
 
   Widget _corpo(Size size) {

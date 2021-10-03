@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+
+import 'componentes_temas/cores.dart';
 
 class NeoBanner extends StatelessWidget {
   final Size size;

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_botao/botao_geral.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/custom_list.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+
+import 'package:neo/components/componentes_globais/componentes_botao/botao_geral.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 
 class DeclaracaoVeracidade extends StatefulWidget {
   const DeclaracaoVeracidade({Key? key}) : super(key: key);
@@ -16,7 +17,11 @@ class _DeclaracaoVeracidadeState extends State<DeclaracaoVeracidade> {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Declaração', rota: '',);
+    return ScaffoldPrincipal(
+      conteudo: _corpo(size),
+      title: 'Declaração',
+      rota: '',
+    );
   }
 
   Widget _corpo(Size size) {

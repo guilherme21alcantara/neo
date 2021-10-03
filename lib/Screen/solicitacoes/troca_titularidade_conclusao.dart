@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
-import 'package:neo/Screen/componentes_globais/custom_list.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+
+import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 import 'package:neo/widgets/troca_titularidade_conclusao_campos.dart';
 
 class TrocaTitularidadeConclusaoPage extends StatelessWidget {

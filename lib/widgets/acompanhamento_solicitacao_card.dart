@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 
 Widget AcompanhamentoSolicitacaoCard(Size size) {
   return Padding(

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
-import 'package:neo/Screen/componentes_globais/custom_list.dart';
-import 'package:neo/Screen/componentes_globais/popups/popup_colorido.dart';
-import 'package:neo/Screen/componentes_globais/popups/popup_simples.dart';
-import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+
+import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/popups/popup_simples.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 import 'package:neo/widgets/cancelamento_campos.dart';
 
 class CancelamentoPage extends StatelessWidget {
@@ -15,7 +15,10 @@ class CancelamentoPage extends StatelessWidget {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size, context), title: 'Eventos e Sinistros', rota: '',);
+      conteudo: _corpo(size, context),
+      title: 'Eventos e Sinistros',
+      rota: '',
+    );
   }
 
   Widget _corpo(Size size, BuildContext context) {

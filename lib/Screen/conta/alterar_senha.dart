@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
-import 'package:neo/Screen/componentes_globais/custom_list.dart';
-import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_cotacao.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_cotacao.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
+
 import 'package:neo/widgets/alterar_senha_campos.dart';
 
 class AlterarSenha extends StatefulWidget {
@@ -18,7 +19,10 @@ class _AlterarSenhaState extends State<AlterarSenha> {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size), title: 'Alteração de senha', rota: '',);
+      conteudo: _corpo(size),
+      title: 'Alteração de senha',
+      rota: '',
+    );
   }
 
   Widget _corpo(Size size) {

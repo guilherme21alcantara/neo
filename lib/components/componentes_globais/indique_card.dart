@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:neo/Screen/componentes_globais/popups/popup_colorido.dart';
-import 'package:neo/Screen/componentes_globais/popups/popup_simples.dart';
+
 import 'package:neo/Screen/indique_ganhe.dart';
 
 import 'componentes_temas/cores.dart';

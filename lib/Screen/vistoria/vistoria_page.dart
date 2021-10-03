@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
-import '../componentes_globais/componentes_botao/botao_geral.dart';
-import '../componentes_globais/componentes_temas/cores.dart';
-import '../componentes_globais/componentes_temas/imagens.dart';
-import '../componentes_globais/custom_list.dart';
-import '../componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
-import '../componentes_globais/scaffold_principal.dart';
+import 'package:neo/components/componentes_globais/componentes_botao/botao_geral.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 
 class VistoriaPage extends StatelessWidget {
   const VistoriaPage({Key? key}) : super(key: key);
@@ -14,7 +13,11 @@ class VistoriaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Autovistoria', rota: '',);
+    return ScaffoldPrincipal(
+      conteudo: _corpo(size),
+      title: 'Autovistoria',
+      rota: '',
+    );
   }
 
   Widget _corpo(Size size) {

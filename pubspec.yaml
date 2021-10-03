@@ -18,7 +18,7 @@ dependencies:
   hexcolor: ^2.0.4
   dropdown_plus: ^0.0.9
   expandable: ^5.0.1
-  flutter_rounded_progress_bar: 0.2.0
+  
 
 dev_dependencies:
   flutter_test:

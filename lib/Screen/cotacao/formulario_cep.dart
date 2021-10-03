@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/componentes_textos_header/header.dart';
-import 'package:neo/Screen/componentes_globais/inputs/input_dropdown.dart';
-import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
-import 'package:neo/Screen/componentes_globais/inputs/radio_button_fino.dart';
-import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/componentes_textos_header/header.dart';
+import 'package:neo/components/componentes_globais/inputs/input_dropdown.dart';
+import 'package:neo/components/componentes_globais/inputs/input_texto.dart';
+import 'package:neo/components/componentes_globais/inputs/radio_button_fino.dart';
+import 'package:neo/components/componentes_globais/inputs/text_button.dart';
 
 class FormularioCEP extends StatefulWidget {
   final Size size;

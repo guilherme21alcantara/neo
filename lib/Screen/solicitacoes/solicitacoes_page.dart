@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
-import 'package:neo/Screen/componentes_globais/custom_list.dart';
-import 'package:neo/Screen/componentes_globais/indique_card.dart';
-import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+
 import 'package:neo/Screen/solicitacoes/acompanhamento_solicitacoes.dart';
 import 'package:neo/Screen/solicitacoes/selecionar_veiculo.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/indique_card.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 import 'package:neo/widgets/solicitacoes_card.dart';
 
 class SolicitacoesPage extends StatelessWidget {

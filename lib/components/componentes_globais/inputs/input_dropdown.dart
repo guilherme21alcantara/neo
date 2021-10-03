@@ -1,6 +1,6 @@
 import 'package:dropdown_plus/dropdown_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 
 class CustomDropdown extends StatefulWidget {
   final Size size;

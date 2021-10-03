@@ -1,20 +1,20 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_botao/botao_geral.dart';
-import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
-import 'package:neo/Screen/componentes_globais/componentes_carrosel/container_selecionado.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/componentes_textos_header/titulo.dart';
-import 'package:neo/Screen/componentes_globais/inputs/input_dropdown.dart';
-import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
-import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
-import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+
 import 'package:neo/Screen/cotacao/buscar_modelo_placa.dart';
 import 'package:neo/Screen/cotacao/buscar_placa.dart';
 import 'package:neo/Screen/cotacao/opcoes_uso_veiculo.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 import 'package:get/route_manager.dart';
+import 'package:neo/components/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
+import 'package:neo/components/componentes_globais/componentes_carrosel/container_selecionado.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/componentes_textos_header/titulo.dart';
+import 'package:neo/components/componentes_globais/inputs/input_dropdown.dart';
+import 'package:neo/components/componentes_globais/inputs/input_texto.dart';
+import 'package:neo/components/componentes_globais/inputs/text_button.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
 
 Widget modelo(Size size) {
   return Container(

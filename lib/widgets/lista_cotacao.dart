@@ -1,7 +1,8 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/custom_list.dart';
-import 'package:neo/Screen/componentes_globais/slider_bar.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+
+import 'package:neo/components/componentes_globais/slider_bar.dart';
 import 'package:neo/widgets/busca_modelo_placa.dart';
 import 'package:neo/widgets/buscar_placa.dart';
 import 'package:neo/widgets/cadastro_campos.dart';
@@ -20,7 +21,12 @@ Widget lista(Size size, bool aceita, bool visualiza, bool campo, bool busca,
           if (campo) campos(size),
           if (busca) buscar(size),
           if (modelos) modelo(size),
-          SliderBar(divisions: 1, min: 22.0, max: 50, size: size,)
+          SliderBar(
+            divisions: 1,
+            min: 22.0,
+            max: 50,
+            size: size,
+          )
         ],
       ));
 }

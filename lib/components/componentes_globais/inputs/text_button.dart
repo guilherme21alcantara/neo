@@ -1,7 +1,6 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 
 class CustomTextButton extends StatelessWidget {
   final Size size;
@@ -14,16 +13,14 @@ class CustomTextButton extends StatelessWidget {
       this.textoComum,
       this.textoClicavel,
       this.function,
-      this.size, this.h})
+      this.size,
+      this.h})
       : super(key: key);
 
-  
   @override
   Widget build(BuildContext context) {
-
-    
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: size.width * h ),
+      padding: EdgeInsets.symmetric(horizontal: size.width * h),
       child: Container(
         height: size.height * 0.03,
         child: Row(

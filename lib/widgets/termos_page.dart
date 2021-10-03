@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_botao/botao_geral.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+
+import 'package:neo/components/componentes_globais/componentes_botao/botao_geral.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 
 class TermosPage extends StatefulWidget {
   final String title;

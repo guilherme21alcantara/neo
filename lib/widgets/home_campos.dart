@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/cancelamento/cancelamento_page.dart';
-import 'package:neo/Screen/componentes_globais/home_card.dart';
 import 'package:neo/Screen/cotacao/adicionar_veiculo.dart';
 import 'package:get/route_manager.dart';
 import 'package:neo/Screen/eventos_e_sinistros/assistencia_24_horas.dart';
 import 'package:neo/Screen/eventos_e_sinistros/eventos_e_sinistros_page.dart';
 import 'package:neo/Screen/solicitacoes/solicitacoes_page.dart';
 import 'package:neo/Screen/vistoria/vistoria_page.dart';
+import 'package:neo/components/componentes_globais/home_card.dart';
 
 class HomeCampos extends StatelessWidget {
   final Size size;

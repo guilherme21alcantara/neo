@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rounded_progress_bar/flutter_rounded_progress_bar.dart';
-import 'package:flutter_rounded_progress_bar/rounded_progress_bar_style.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
+
+import 'componentes_temas/cores.dart';
 
 class SliderBar extends StatefulWidget {
   final double min;

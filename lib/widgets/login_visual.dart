@@ -1,11 +1,12 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
-import 'package:neo/Screen/componentes_globais/componentes_textos_header/titulo.dart';
-import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_cotacao.dart';
+
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/login.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/components/componentes_globais/componentes_textos_header/titulo.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_cotacao.dart';
 
 Widget visualLogin(Size size) {
   return Container(

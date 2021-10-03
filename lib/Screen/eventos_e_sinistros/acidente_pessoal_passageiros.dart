@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
-import 'package:neo/Screen/componentes_globais/custom_list.dart';
-import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
+
 import 'package:neo/widgets/acidente_pessoal_passageiros.dart';
 
 class AcidentePessoalPassageirosPage extends StatelessWidget {
@@ -13,7 +14,10 @@ class AcidentePessoalPassageirosPage extends StatelessWidget {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
-        conteudo: _corpo(size), title: 'Eventos e Sinistros', rota: '',);
+      conteudo: _corpo(size),
+      title: 'Eventos e Sinistros',
+      rota: '',
+    );
   }
 
   Widget _corpo(Size size) {

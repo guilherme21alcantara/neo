@@ -1,7 +1,7 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 import 'package:neo/widgets/lista_cotacao.dart';
 
 class BuscarModelo extends StatelessWidget {
@@ -11,7 +11,8 @@ class BuscarModelo extends StatelessWidget {
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
-      conteudo: lista(size, true, false, false, false, true), rota: '',
+      conteudo: lista(size, true, false, false, false, true),
+      rota: '',
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/custom_list.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 import 'package:neo/widgets/veiculo_card.dart';
 
 class SelecionarVeiculoPage extends StatelessWidget {

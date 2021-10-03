@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:neo/Screen/componentes_globais/componentes_botao/botao_geral.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/inputs/checkbox.dart';
-import 'package:neo/Screen/componentes_globais/inputs/input_texto_icon.dart';
+
 import 'package:get/route_manager.dart';
 import 'package:neo/Screen/conta/esqueceu_senha.dart';
 import 'package:neo/Screen/conta/home.dart';
+import 'package:neo/components/componentes_globais/componentes_botao/botao_geral.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/inputs/checkbox.dart';
+import 'package:neo/components/componentes_globais/inputs/input_texto_icon.dart';
 
 Widget camposLogin(Size size) {
   return Container(
@@ -39,8 +40,7 @@ Widget camposLogin(Size size) {
                   title: 'Relembrar',
                 ),
                 TextButton(
-                    onPressed: () 
-                    {
+                    onPressed: () {
                       Get.offAll(EsqueceuSenhaPage());
                     },
                     child: Text(
@@ -55,8 +55,8 @@ Widget camposLogin(Size size) {
           ),
           BotaoGeral(
             fun: () {
-          Get.offAll(HomePage());
-        },
+              Get.offAll(HomePage());
+            },
             text: 'Entrar',
             size: size * 1.12,
             h: 0.01,

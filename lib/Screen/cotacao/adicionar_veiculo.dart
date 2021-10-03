@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/custom_box.dart';
-import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
-import 'package:neo/Screen/componentes_globais/inputs/text_button.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/custom_box.dart';
+import 'package:neo/components/componentes_globais/inputs/input_texto.dart';
+import 'package:neo/components/componentes_globais/inputs/text_button.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 
 class AdicionarVeiculoPage extends StatefulWidget {
   const AdicionarVeiculoPage({Key? key}) : super(key: key);
@@ -17,7 +18,11 @@ class _AdicionarVeiculoPageState extends State<AdicionarVeiculoPage> {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(conteudo: _corpo(size), title: 'Cotação', rota: '',);
+    return ScaffoldPrincipal(
+      conteudo: _corpo(size),
+      title: 'Cotação',
+      rota: '',
+    );
   }
 
   Widget _corpo(Size size) {

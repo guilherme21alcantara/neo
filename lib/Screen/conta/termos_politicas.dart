@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 
 class TermosPoliticas extends StatelessWidget {
   const TermosPoliticas({Key? key}) : super(key: key);
@@ -11,7 +12,8 @@ class TermosPoliticas extends StatelessWidget {
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
       title: TITULOS.CONTA,
-      conteudo: _corpo(size), rota: '',
+      conteudo: _corpo(size),
+      rota: '',
     );
   }
 

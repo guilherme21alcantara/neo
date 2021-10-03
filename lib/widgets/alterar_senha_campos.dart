@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:neo/Screen/componentes_globais/componentes_botao/botao_geral.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
+
+import 'package:neo/components/componentes_globais/componentes_botao/botao_geral.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/inputs/input_texto.dart';
 
 Widget camposAlterarSenha(Size size) {
   return Container(

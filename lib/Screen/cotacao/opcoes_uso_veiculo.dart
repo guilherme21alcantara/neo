@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-// ignore: import_of_legacy_library_into_null_safe
-import 'package:neo/Screen/componentes_globais/componentes_textos_header/header.dart';
-import 'package:neo/Screen/componentes_globais/inputs/radio_button.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/opcoes_veiculo.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
+import 'package:neo/components/componentes_globais/componentes_textos_header/header.dart';
+import 'package:neo/components/componentes_globais/inputs/radio_button.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 
 class OpcoesUsoVeiculo extends StatefulWidget {
   const OpcoesUsoVeiculo({Key? key}) : super(key: key);
@@ -22,8 +22,8 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
-      conteudo: _corpo(size), rota: '',
-      
+      conteudo: _corpo(size),
+      rota: '',
     );
   }
 

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/components/componentes_globais/custom_list.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 import 'package:neo/widgets/indique_ganhe_campos.dart';
-
-import 'componentes_globais/componentes_temas/imagens.dart';
-import 'componentes_globais/custom_list.dart';
-import 'componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
-import 'componentes_globais/scaffold_principal.dart';
 
 class IndiqueGanhePage extends StatelessWidget {
   const IndiqueGanhePage({Key? key}) : super(key: key);

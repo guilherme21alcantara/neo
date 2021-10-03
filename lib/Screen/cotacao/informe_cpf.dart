@@ -1,10 +1,11 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/componentes_textos_header/header.dart';
-import 'package:neo/Screen/componentes_globais/inputs/input_texto.dart';
-import 'package:neo/Screen/componentes_globais/scaffold_principal.dart';
+
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/componentes_textos_header/header.dart';
+import 'package:neo/components/componentes_globais/inputs/input_texto.dart';
+import 'package:neo/components/componentes_globais/scaffold_principal.dart';
 
 class InformeCPF extends StatefulWidget {
   const InformeCPF({Key key}) : super(key: key);
@@ -18,7 +19,11 @@ class _InformeCPFState extends State<InformeCPF> {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
-    return ScaffoldPrincipal(title: TITULOS.COTACAO, conteudo: _corpo(size), rota: '',);
+    return ScaffoldPrincipal(
+      title: TITULOS.COTACAO,
+      conteudo: _corpo(size),
+      rota: '',
+    );
   }
 
   Widget _corpo(Size size) {

@@ -1,11 +1,12 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/cores.dart';
-import 'package:neo/Screen/componentes_globais/componentes_temas/imagens.dart';
-import 'package:neo/Screen/componentes_globais/componentes_textos_header/titulo.dart';
-import 'package:neo/Screen/componentes_globais/rotas_imagens/rotas_cotacao.dart';
+
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
+import 'package:neo/components/componentes_globais/componentes_textos_header/titulo.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_cotacao.dart';
 
 Widget visual(Size size) {
   return Container(
@@ -34,7 +35,6 @@ Widget visual(Size size) {
             cor: AppCores.PRETO,
             bold: FontWeight.normal,
           ),
-          
         ],
       ));
 }
