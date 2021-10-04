@@ -46,7 +46,8 @@ flutter:
    - assets/indique.jpeg
    - assets/icon_header.png
    - assets/logo.png
-
+   - assets/loading.png
+   
 flutter_icons:
   ios: true
   android: true

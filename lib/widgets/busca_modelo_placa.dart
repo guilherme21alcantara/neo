@@ -74,28 +74,29 @@ Widget modelo(Size size) {
                   SizedBox(height: size.height * 0.01),
                   CustomDropdown(
                       size: size, text: 'Modelo', optionsList: ['optionsList']),
-                      SliderBar(
-            divisions: 1,
-            min: 22.0,
-            max: 50,
-            size: size,
-          ),
+                      SizedBox(height: size.height * 0.02),
+                  SliderBar(
+                    divisions: 1,
+                    min: 22.0,
+                    max: 50,
+                    size: size,
+                  ),
                   Padding(
-                    padding: EdgeInsets.only(right: 100),
-                    child:Container(
-                    decoration: BoxDecoration(
-                        border: Border.all(color: AppCores.ROXOPRINCIPAL),
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    height: size.height * 0.05,
-                    width: size.width * 0.1,
-                    child: IconButton(
-                        icon: Image.asset(RoutesImagens.BUTTON),
-                        iconSize: 30,
-                        onPressed: () {
-                          Get.offAll(BuscarPlaca());
-                        }),
-                  ) ,),
-                  
+                    padding: EdgeInsets.only(left: size.width*0.8),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: AppCores.ROXOPRINCIPAL),
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      height: size.height * 0.05,
+                      width: size.width * 0.1,
+                      child: IconButton(
+                          icon: Image.asset(RoutesImagens.BUTTON),
+                          iconSize: 30,
+                          onPressed: () {
+                            Get.offAll(OpcoesUsoVeiculo());
+                          }),
+                    ),
+                  ),
                 ],
               )),
           SizedBox(height: size.height * 0.01),
