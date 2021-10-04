@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/ajuda/ajuda_page.dart';
 import 'package:neo/Screen/notificacoes/notificacoes_page.dart';
+import 'package:neo/Screen/perfil/perfil_page.dart';
 
 import 'package:neo/components/componentes_globais/scaffold_home.dart';
 import 'package:neo/widgets/home_conteudo.dart';
@@ -19,7 +20,7 @@ class _HomePageState extends State<HomePage> {
     var size = mediaQuery.size;
     return ScaffoldHome(conteudo: [
       HomeConteudo(size: size),
-      HomeConteudo(size: size),
+      PerfilPage(),
       AjudaPage(),
       NotificacoesPage()
     ], title: 'Olá João');
