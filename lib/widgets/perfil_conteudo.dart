@@ -4,6 +4,7 @@ import 'package:get/route_manager.dart';
 import 'package:neo/Screen/perfil/add_endereco_page.dart';
 import 'package:neo/Screen/perfil/detalhes_perfil.dart';
 import 'package:neo/Screen/perfil/perfil_ajustes.dart';
+import 'package:neo/Screen/perfil/termos_privacidade.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/widgets/perfil_card.dart';
 
@@ -33,7 +34,9 @@ Widget PerfilConteudo(Size size) {
         PerfilCard(size, Icons.gps_fixed, 'Endereços', () {
           Get.offAll(AddEnderecoPage());
         }),
-        PerfilCard(size, Icons.file_copy, 'Termos e Condições', () {}),
+        PerfilCard(size, Icons.file_copy, 'Termos e Condições', () {
+          Get.offAll(TermosPrivacidadePage(size: size));
+        }),
         PerfilCard(size, Icons.message, 'Ajuda', () {}),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: size.width * 0.02),
