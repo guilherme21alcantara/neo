@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:neo/Screen/perfil/detalhes_perfil.dart';
+import 'package:neo/Screen/perfil/perfil_ajustes.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/widgets/perfil_card.dart';
 
@@ -23,7 +24,9 @@ Widget PerfilConteudo(Size size) {
         PerfilCard(size, Icons.person, 'Perfil', () {
           Get.offAll(DetalhesPerfil());
         }),
-        PerfilCard(size, Icons.settings, 'Ajustes', () {}),
+        PerfilCard(size, Icons.settings, 'Ajustes', () {
+          Get.offAll(AjustesPerfilPage());
+        }),
         PerfilCard(size, Icons.history, 'Histórico de Pagamentos', () {}),
         PerfilCard(size, Icons.health_and_safety_sharp, 'Apólice', () {}),
         PerfilCard(size, Icons.gps_fixed, 'Endereços', () {}),
