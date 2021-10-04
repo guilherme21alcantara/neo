@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neo/Routes/app_routes.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/components/componentes_globais/custom_list.dart';
 import 'package:neo/components/componentes_globais/scaffold_principal.dart';
@@ -19,7 +20,7 @@ class _AjustesPerfilPageState extends State<AjustesPerfilPage> {
     return ScaffoldPrincipal(
       conteudo: _corpo(size),
       title: 'Detalhes do Perfil',
-      rota: '',
+      rota: Routes.HOME,
     );
   }
 
