@@ -20,7 +20,7 @@ class _CotarCadastroState extends State<CotarCadastro> {
     return ScaffoldPrincipal(
       rota: Routes.INITIAL,
       title: TITULOS.COTACAO,
-      conteudo: lista(size, true, true, true, false, false),
+      conteudo: lista(size, true, true, true, false, false, ),
     );
   }
 }

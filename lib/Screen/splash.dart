@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:neo/Screen/carrosel/carrosel.dart';
+import 'package:neo/components/componentes_globais/animacao.dart';
 
 class splash extends StatefulWidget {
   @override
@@ -20,10 +21,9 @@ class _splashState extends State<splash> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Image.asset(
-        'assets/bg.png',
-        fit: BoxFit.cover,
-      ),
+      child: Padding(padding: EdgeInsets.only(right: 190, bottom: 150),
+      child: BouncingBallDemo()),
+      decoration: BoxDecoration( image: DecorationImage(image: AssetImage("assets/bg.png"), fit: BoxFit.cover)),
     );
   }
 }
