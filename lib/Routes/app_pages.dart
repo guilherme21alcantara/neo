@@ -17,6 +17,7 @@ import 'package:neo/Screen/cotacao/informe_cpf.dart';
 import 'package:neo/Screen/cotacao/opcoes_uso_veiculo.dart';
 import 'package:neo/Screen/eventos_e_sinistros/declaracao_de_veracidade.dart';
 import 'package:neo/Screen/eventos_e_sinistros/eventos_e_sinistros_page.dart';
+import 'package:neo/Screen/perfil/ative_localizacao.dart';
 import 'package:neo/Screen/solicitacoes/solicitacoes_page.dart';
 import 'package:neo/Screen/solicitacoes/troca_titularidade.dart';
 import 'package:neo/Screen/splash.dart';
@@ -25,7 +26,7 @@ import 'package:neo/widgets/sucesso_page.dart';
 
 class AppPages {
   static final routes = [
-    GetPage(name: Routes.INITIAL, page: () => HomePage()),
+    GetPage(name: Routes.INITIAL, page: () => splash()),
     GetPage(name: Routes.CADASTRO, page: () => CotarCadastro())
   ];
 }
