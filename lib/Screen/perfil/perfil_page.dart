@@ -29,7 +29,7 @@ class PerfilPage extends StatelessWidget {
               padding: EdgeInsets.symmetric(
                   vertical: size.height * 0.01, horizontal: size.width * 0.1),
               child: Container(
-                  height: size.height * 0.5,
+                  height: size.height * 0.6,
                   width: size.width,
                   child: PerfilConteudo(size)),
             )
