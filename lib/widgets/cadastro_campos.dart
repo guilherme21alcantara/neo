@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 import 'package:neo/Screen/cotacao/buscar_modelo_placa.dart';
+import 'package:neo/Screen/cotacao/buscar_placa.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 import 'package:get/route_manager.dart';
 import 'package:neo/components/componentes_globais/componentes_botao/botao_geral.dart';
@@ -30,7 +31,7 @@ Widget campos(Size size) {
             fonte: FontWeight.w800,
             tam: 18,
             fun: () {
-              Get.offAll(BuscarModelo());
+              Get.offAll(BuscarPlaca());
             },
           ),
           SizedBox(height: size.height * 0.03),

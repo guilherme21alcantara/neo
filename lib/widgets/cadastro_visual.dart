@@ -15,7 +15,7 @@ Widget visual(Size size) {
       child: Column(
         children: [
           RotasImagens(
-              h: 0.33,
+              h: 0.35,
               image: AssetImage(
                 RoutesImagensCotacao.CADASTRO,
               )),

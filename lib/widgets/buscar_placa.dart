@@ -1,6 +1,7 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
-
+import 'package:get/route_manager.dart';
+import 'package:neo/Routes/app_routes.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/cadastro.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 import 'package:neo/components/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
@@ -55,7 +56,7 @@ Widget buscar(Size size) {
                 SizedBox(width: size.width * 0.02),
                 ContainerSelect(cor: AppCores.ROXOPRINCIPAL),
                 SizedBox(width: size.width * 0.05),
-                ContainerNaoSelect(),
+                ContainerNaoSelect(rotas: Routes.PROX,),
                 SizedBox(width: size.width * 0.05),
                 ContainerNaoSelect(),
                 SizedBox(width: size.width * 0.05),

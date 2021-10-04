@@ -10,6 +10,8 @@ class _BouncingBallDemoState extends State<BouncingBallDemo>
     with TickerProviderStateMixin {
   late AnimationController controller;
 
+
+
   @override
   void initState() {
     super.initState();
@@ -28,8 +30,13 @@ class _BouncingBallDemoState extends State<BouncingBallDemo>
     controller.repeat(reverse: true);
   }
 
+ @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ) {
     return Container(
       margin: EdgeInsets.only(top: controller.value),
       child: Container(

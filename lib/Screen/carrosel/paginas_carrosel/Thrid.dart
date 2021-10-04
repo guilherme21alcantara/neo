@@ -26,9 +26,27 @@ class _ThridCarroselState extends State<ThridCarrosel> {
     var mediaQuery = MediaQuery.of(context);
     var size = mediaQuery.size;
     return Scaffold(
+      appBar: AppBar(
+        bottomOpacity: 0.0,
+        elevation: 0.0,
+        automaticallyImplyLeading: false,
+        backgroundColor: AppCores.BACKGROUND,
+        title: Row(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: size.height * 0.11),
+              child: Image.asset(
+                'assets/icon_header.png',
+                fit: BoxFit.cover,
+                scale: 2,
+              ),
+            )
+          ],
+        ),
+      ),
       body: Column(
         children: [
-          RotasImagens(h: 0.5, image: AssetImage(RoutesImagens.THRIDIMAGE)),
+          RotasImagens(h: 0.4, image: AssetImage(RoutesImagens.THRIDIMAGE)),
           Expanded(
               child: Container(
             height: size.height * 0.3,
@@ -56,7 +74,8 @@ class _ThridCarroselState extends State<ThridCarrosel> {
                   cor: AppCores.BRANCO,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: size.height * 0.02),
+                  padding: EdgeInsets.only(
+                      top: size.height * 0.02, left: size.height * 0.015),
                   child: Container(
                     height: size.height * 0.05,
                     width: size.width * 0.4,

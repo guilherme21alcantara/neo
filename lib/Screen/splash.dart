@@ -26,4 +26,6 @@ class _splashState extends State<splash> {
       decoration: BoxDecoration( image: DecorationImage(image: AssetImage("assets/bg.png"), fit: BoxFit.cover)),
     );
   }
+
+  
 }

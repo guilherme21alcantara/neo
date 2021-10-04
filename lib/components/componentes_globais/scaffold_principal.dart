@@ -22,6 +22,8 @@ class ScaffoldPrincipal extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppCores.BACKGROUND,
       appBar: AppBar(
+         bottomOpacity: 0.0,
+        elevation: 0.0,
         toolbarHeight: size.height * 0.08,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(

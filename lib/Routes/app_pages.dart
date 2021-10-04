@@ -5,6 +5,7 @@ import 'package:neo/Screen/conta/alterar_senha.dart';
 import 'package:neo/Screen/conta/esqueceu_senha.dart';
 import 'package:neo/Screen/conta/home.dart';
 import 'package:neo/Screen/conta/login.dart';
+import 'package:neo/Screen/cotacao/buscar_modelo_placa.dart';
 import 'package:neo/Screen/cotacao/buscar_placa.dart';
 import 'package:neo/Screen/cotacao/cadastro.dart';
 import 'package:neo/Screen/cotacao/informe_cep_faculdade.dart';
@@ -28,6 +29,7 @@ class AppPages {
   static final routes = [
     GetPage(name: Routes.INITIAL, page: () => splash()),
     GetPage(name: Routes.CADASTRO, page: () => CotarCadastro()),
-    GetPage(name: Routes.HOME, page: () => HomePage())
+    GetPage(name: Routes.HOME, page: () => HomePage()),
+    GetPage(name: Routes.PROX, page: () => BuscarModelo())
   ];
 }

@@ -4,4 +4,5 @@ abstract class Routes
   static const CARROSSEL = '/carrossel';
   static const CADASTRO = '/cadastro';
   static const HOME = '/home';
+  static const PROX = '/prox';
 }
