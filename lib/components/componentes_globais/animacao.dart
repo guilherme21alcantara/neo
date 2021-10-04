@@ -20,7 +20,6 @@ class _BouncingBallDemoState extends State<BouncingBallDemo>
       duration: Duration(seconds: 1),
       lowerBound: 0,
       upperBound: 100,
-      
     );
 
     controller.addListener(() {
@@ -28,6 +27,10 @@ class _BouncingBallDemoState extends State<BouncingBallDemo>
     });
 
     controller.repeat(reverse: true);
+
+    Timer(Duration(seconds: 3), () {
+      controller.dispose();
+    });
   }
 
  @override
@@ -41,9 +44,8 @@ class _BouncingBallDemoState extends State<BouncingBallDemo>
       margin: EdgeInsets.only(top: controller.value),
       child: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/logo.png"), scale: 5)
-        ),
-        
+            image: DecorationImage(
+                image: AssetImage("assets/logo.png"), scale: 5)),
       ),
     );
   }

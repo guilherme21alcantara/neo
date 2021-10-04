@@ -21,9 +21,12 @@ class _splashState extends State<splash> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Padding(padding: EdgeInsets.only(right: 190, bottom: 150),
-      child: BouncingBallDemo()),
-      decoration: BoxDecoration( image: DecorationImage(image: AssetImage("assets/bg.png"), fit: BoxFit.cover)),
+      child: Padding(
+          padding: EdgeInsets.only(right: 190, bottom: 150),
+          child: BouncingBallDemo()),
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("assets/bg.png"), fit: BoxFit.cover)),
     );
   }
 
