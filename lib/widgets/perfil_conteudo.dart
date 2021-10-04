@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:neo/Screen/carrosel/carrosel.dart';
 import 'package:neo/Screen/perfil/detalhes_perfil.dart';
 import 'package:neo/Screen/perfil/perfil_ajustes.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
@@ -46,13 +47,15 @@ Widget PerfilConteudo(Size size) {
                 SizedBox(
                   width: size.width * 0.02,
                 ),
-                Text(
+                GestureDetector(
+                  onTap: ()=> Get.offAll(Carousel()),
+                  child:Text(
                   'Sair',
                   style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: AppCores.PRETO),
-                )
+                ))
               ],
             ),
           ),

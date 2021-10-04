@@ -26,6 +26,7 @@ import 'package:neo/widgets/sucesso_page.dart';
 class AppPages {
   static final routes = [
     GetPage(name: Routes.INITIAL, page: () => splash()),
-    GetPage(name: Routes.CADASTRO, page: () => CotarCadastro())
+    GetPage(name: Routes.CADASTRO, page: () => CotarCadastro()),
+    GetPage(name: Routes.HOME, page: ()=> HomePage())
   ];
 }

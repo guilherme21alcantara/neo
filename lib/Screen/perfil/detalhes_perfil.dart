@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neo/Routes/app_routes.dart';
 import 'package:neo/components/componentes_globais/componentes_botao/botao_geral.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/components/componentes_globais/custom_list.dart';
@@ -16,7 +17,7 @@ class DetalhesPerfil extends StatelessWidget {
     return ScaffoldPrincipal(
       conteudo: _corpo(size),
       title: 'Detalhes do Perfil',
-      rota: '',
+      rota: Routes.HOME,
     );
   }
 
