@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:neo/Screen/perfil/add_endereco_page.dart';
 import 'package:neo/Screen/perfil/detalhes_perfil.dart';
 import 'package:neo/Screen/perfil/perfil_ajustes.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
@@ -29,7 +30,9 @@ Widget PerfilConteudo(Size size) {
         }),
         PerfilCard(size, Icons.history, 'Histórico de Pagamentos', () {}),
         PerfilCard(size, Icons.health_and_safety_sharp, 'Apólice', () {}),
-        PerfilCard(size, Icons.gps_fixed, 'Endereços', () {}),
+        PerfilCard(size, Icons.gps_fixed, 'Endereços', () {
+          Get.offAll(AddEnderecoPage());
+        }),
         PerfilCard(size, Icons.file_copy, 'Termos e Condições', () {}),
         PerfilCard(size, Icons.message, 'Ajuda', () {}),
         Padding(
