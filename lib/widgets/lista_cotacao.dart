@@ -21,12 +21,7 @@ Widget lista(Size size, bool aceita, bool visualiza, bool campo, bool busca,
           if (campo) campos(size),
           if (busca) buscar(size),
           if (modelos) modelo(size),
-          SliderBar(
-            divisions: 1,
-            min: 22.0,
-            max: 50,
-            size: size,
-          )
+         
         ],
       ));
 }

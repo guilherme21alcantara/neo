@@ -11,7 +11,7 @@ class BuscarPlaca extends StatelessWidget {
     var size = mediaQuery.size;
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
-      conteudo: lista(size, true, false, false, true, false),
+      conteudo: lista(size, true, false, false, true, false, ),
       rota: '',
     );
   }

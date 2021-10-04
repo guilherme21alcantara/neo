@@ -44,6 +44,8 @@ flutter:
    - assets/vistoria.png
    - assets/eventos.png
    - assets/indique.jpeg
+   - assets/icon_header.png
+   - assets/logo.png
 
 flutter_icons:
   ios: true
