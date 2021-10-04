@@ -43,7 +43,7 @@ class _ScaffoldHomeState extends State<ScaffoldHome> {
           style: TextStyle(color: AppCores.PRETO, fontWeight: FontWeight.w800),
         ),
         backgroundColor: AppCores.BRANCO,
-        leading: Icon(Icons.access_alarm, color: AppCores.PRETO),
+        leading: Padding(padding: EdgeInsets.only(left: 10),child:Image.asset('assets/icon_header.png', fit: BoxFit.cover,)),
         actions: <Widget>[
           IconButton(
               onPressed: () {},

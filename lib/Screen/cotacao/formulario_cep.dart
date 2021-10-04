@@ -1,10 +1,16 @@
+
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
+import 'package:neo/Screen/cotacao/informe_cpf.dart';
+import 'package:neo/components/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
+import 'package:neo/components/componentes_globais/componentes_carrosel/container_selecionado.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/components/componentes_globais/componentes_textos_header/header.dart';
 import 'package:neo/components/componentes_globais/inputs/input_dropdown.dart';
 import 'package:neo/components/componentes_globais/inputs/input_texto.dart';
 import 'package:neo/components/componentes_globais/inputs/radio_button_fino.dart';
 import 'package:neo/components/componentes_globais/inputs/text_button.dart';
+import 'package:neo/components/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
 
 class FormularioCEP extends StatefulWidget {
   final Size size;
@@ -145,6 +151,41 @@ class _FormularioCEPState extends State<FormularioCEP> {
                 size: size,
                 text: 'NÃO'),
             SizedBox(height: size.height * 0.01),
+            Padding(
+                    padding: EdgeInsets.only(left: size.width*0.8),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: AppCores.ROXOPRINCIPAL),
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      height: size.height * 0.05,
+                      width: size.width * 0.1,
+                      child: IconButton(
+                          icon: Image.asset(RoutesImagens.BUTTON),
+                          iconSize: 30,
+                          onPressed: () {
+                            Get.offAll(InformeCPF());
+                          }),
+                    ),
+                  ),
+               SizedBox(height: size.height * 0.01),
+          Padding(
+            padding: EdgeInsets.only(left: size.width*0.2),
+            child: Container(
+            height: size.height * 0.05,
+            width: size.width * 0.6,
+            child: Row(
+              children: [
+                SizedBox(width: size.width * 0.02),
+                ContainerNaoSelect(),
+                SizedBox(width: size.width * 0.05),
+                ContainerNaoSelect(),
+                SizedBox(width: size.width * 0.05),
+                ContainerSelect(cor: AppCores.ROXOPRINCIPAL),
+                SizedBox(width: size.width * 0.05),
+                ContainerNaoSelect(),
+              ],
+            ),
+          ))
           ],
         ),
       ),

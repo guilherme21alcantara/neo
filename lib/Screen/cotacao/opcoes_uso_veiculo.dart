@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
-
+import 'package:get/get_navigation/src/extension_navigation.dart';
+import 'package:neo/Screen/cotacao/formulario_cep.dart';
+import 'package:neo/Screen/cotacao/formulario_cep_tela.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/opcoes_veiculo.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 import 'package:neo/components/componentes_globais/componentes_textos_header/header.dart';
 import 'package:neo/components/componentes_globais/inputs/radio_button.dart';
 import 'package:neo/components/componentes_globais/scaffold_principal.dart';
+import 'package:get/route_manager.dart';
 
 class OpcoesUsoVeiculo extends StatefulWidget {
   const OpcoesUsoVeiculo({Key? key}) : super(key: key);
@@ -47,6 +50,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
               onChanged: (v) {
                 setState(() {
                   selectedValue = int.parse(v.toString());
+                  Get.offAll(FormularioCep());
                 });
               },
               size: size,
