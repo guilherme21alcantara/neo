@@ -32,7 +32,7 @@ Widget modelo(Size size) {
             cor: AppCores.ROXOPRINCIPAL,
             bold: FontWeight.bold,
           ),
-          SizedBox(height: size.height * 0.05),
+          SizedBox(height: size.height * 0.01),
           Container(
               width: size.width * 0.95,
               color: AppCores.BRANCO,
@@ -53,7 +53,7 @@ Widget modelo(Size size) {
                       size: size),
                 ],
               )),
-          SizedBox(height: size.height * 0.05),
+          SizedBox(height: size.height * 0.015),
           Container(
               width: size.width * 0.95,
               color: AppCores.BRANCO,
@@ -74,15 +74,15 @@ Widget modelo(Size size) {
                   SizedBox(height: size.height * 0.01),
                   CustomDropdown(
                       size: size, text: 'Modelo', optionsList: ['optionsList']),
-                      SizedBox(height: size.height * 0.02),
+                    SizedBox(height: size.height * 0.01),
                   SliderBar(
-                    divisions: 1,
-                    min: 22.0,
+                    divisions: 50,
+                    min: 22,
                     max: 50,
                     size: size,
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: size.width*0.8),
+                    padding: EdgeInsets.only(left: size.width*0.75),
                     child: Container(
                       decoration: BoxDecoration(
                           border: Border.all(color: AppCores.ROXOPRINCIPAL),
@@ -91,7 +91,7 @@ Widget modelo(Size size) {
                       width: size.width * 0.1,
                       child: IconButton(
                           icon: Image.asset(RoutesImagens.BUTTON),
-                          iconSize: 30,
+                          iconSize: 100,
                           onPressed: () {
                             Get.offAll(OpcoesUsoVeiculo());
                           }),
@@ -100,7 +100,11 @@ Widget modelo(Size size) {
                 ],
               )),
           SizedBox(height: size.height * 0.01),
-          Container(
+          
+          Padding
+          (padding: EdgeInsets.only(
+                      top: size.height * 0.03, left: size.height * 0.04),
+            child: Container(
             height: size.height * 0.05,
             width: size.width * 0.6,
             child: Row(
@@ -115,7 +119,7 @@ Widget modelo(Size size) {
                 ContainerNaoSelect(),
               ],
             ),
-          )
+          ))
         ],
       ));
 }

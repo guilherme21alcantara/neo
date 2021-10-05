@@ -31,7 +31,7 @@ Widget campos(Size size) {
             fonte: FontWeight.w800,
             tam: 18,
             fun: () {
-              Get.offAll(BuscarPlaca());
+              Get.offAll(BuscarModelo());
             },
           ),
           SizedBox(height: size.height * 0.03),

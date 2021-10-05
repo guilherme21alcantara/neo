@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:neo/Screen/cotacao/informe_cep_faculdade.dart';
+import 'package:neo/Screen/cotacao/informe_cep_faculdade_alt.dart';
 import 'package:neo/Screen/cotacao/informe_cpf.dart';
 import 'package:neo/components/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
 import 'package:neo/components/componentes_globais/componentes_carrosel/container_selecionado.dart';
@@ -163,13 +165,14 @@ class _FormularioCEPState extends State<FormularioCEP> {
                           icon: Image.asset(RoutesImagens.BUTTON),
                           iconSize: 30,
                           onPressed: () {
-                            Get.offAll(InformeCPF());
+                            Get.offAll(InformeCEPFaculdade());
                           }),
                     ),
                   ),
                SizedBox(height: size.height * 0.01),
           Padding(
-            padding: EdgeInsets.only(left: size.width*0.2),
+            padding: EdgeInsets.only(
+                      top: size.height * 0.03, left: size.height * 0.11),
             child: Container(
             height: size.height * 0.05,
             width: size.width * 0.6,

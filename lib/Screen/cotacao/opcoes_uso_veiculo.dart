@@ -4,6 +4,9 @@ import 'package:neo/Screen/cotacao/formulario_cep.dart';
 import 'package:neo/Screen/cotacao/formulario_cep_tela.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/opcoes_veiculo.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
+import 'package:neo/components/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
+import 'package:neo/components/componentes_globais/componentes_carrosel/container_selecionado.dart';
+import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/components/componentes_globais/componentes_textos_header/header.dart';
 import 'package:neo/components/componentes_globais/inputs/radio_button.dart';
 import 'package:neo/components/componentes_globais/scaffold_principal.dart';
@@ -34,7 +37,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
     return Container(
       height: size.height * 0.9,
       width: size.width,
-      child: Column(
+      child: ListView(
         children: [
           MainHeader(
             paddingLados: size.width * 0.05,
@@ -125,6 +128,27 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
               },
               size: size,
               text: 'Outros usos a trabalho'),
+          Padding(
+              padding: EdgeInsets.only(
+                  top: size.height * 0.03, left: size.height * 0.11),
+              child: Container(
+                height: size.height * 0.05,
+                width: size.width * 0.6,
+                child: Row(
+                  children: [
+                    SizedBox(width: size.width * 0.03),
+                    ContainerNaoSelect(),
+                    SizedBox(width: size.width * 0.03),
+                    ContainerNaoSelect(),
+                    SizedBox(width: size.width * 0.03),
+                    ContainerNaoSelect(),
+                    SizedBox(width: size.width * 0.03),
+                    ContainerSelect(cor: AppCores.ROXOPRINCIPAL),
+                    SizedBox(width: size.width * 0.03),
+                    ContainerNaoSelect(),
+                  ],
+                ),
+              ))
         ],
       ),
     );

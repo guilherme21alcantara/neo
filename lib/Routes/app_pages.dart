@@ -30,6 +30,7 @@ class AppPages {
     GetPage(name: Routes.INITIAL, page: () => splash()),
     GetPage(name: Routes.CADASTRO, page: () => CotarCadastro()),
     GetPage(name: Routes.HOME, page: () => HomePage()),
-    GetPage(name: Routes.PROX, page: () => BuscarModelo())
+    GetPage(name: Routes.PROX, page: () => BuscarModelo()),
+    GetPage(name: Routes.OPCAO, page:()=> OpcoesUsoVeiculo())
   ];
 }

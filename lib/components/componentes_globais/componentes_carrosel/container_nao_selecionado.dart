@@ -17,8 +17,7 @@ class ContainerNaoSelect extends StatelessWidget {
     var size = mediaQuery.size;
     return GestureDetector(
         onTap: () {
-          Get.offAll(rotas);
-          print("object");
+          Get.toNamed(rotas);
         },
         child: Container(
           height: size.height * 0.025,
