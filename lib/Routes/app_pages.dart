@@ -8,6 +8,7 @@ import 'package:neo/Screen/conta/login.dart';
 import 'package:neo/Screen/cotacao/buscar_modelo_placa.dart';
 import 'package:neo/Screen/cotacao/buscar_placa.dart';
 import 'package:neo/Screen/cotacao/cadastro.dart';
+import 'package:neo/Screen/cotacao/cotacao_coberturas_page.dart';
 import 'package:neo/Screen/cotacao/informe_cep_faculdade.dart';
 import 'package:neo/Screen/cotacao/informe_cep_faculdade_alt.dart';
 import 'package:neo/Screen/cotacao/informe_cep_pernoita.dart';
@@ -27,7 +28,7 @@ import 'package:neo/widgets/sucesso_page.dart';
 
 class AppPages {
   static final routes = [
-    GetPage(name: Routes.INITIAL, page: () => splash()),
+    GetPage(name: Routes.INITIAL, page: () => CotacaoCoberturasPage()),
     GetPage(name: Routes.CADASTRO, page: () => CotarCadastro()),
     GetPage(name: Routes.HOME, page: () => HomePage()),
     GetPage(name: Routes.PROX, page: () => BuscarModelo()),
