@@ -24,6 +24,7 @@ class _AdicionarVeiculoPageState extends State<AdicionarVeiculoPage> {
       rota: '',
     );
   }
+  
 
   Widget _corpo(Size size) {
     return Column(
