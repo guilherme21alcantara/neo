@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neo/Routes/app_routes.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
 import 'package:neo/components/componentes_globais/custom_list.dart';
 import 'package:neo/components/componentes_globais/rotas_imagens/rotas_cotacao.dart';
@@ -21,7 +22,7 @@ class _AlterarSenhaState extends State<AlterarSenha> {
     return ScaffoldPrincipal(
       conteudo: _corpo(size),
       title: 'Alteração de senha',
-      rota: '',
+      rota: Routes.LOGINPAG,
     );
   }
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neo/Routes/app_routes.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/imagens.dart';
 import 'package:neo/components/componentes_globais/custom_list.dart';
@@ -23,7 +24,7 @@ class _EsqueceuSenhaPageState extends State<EsqueceuSenhaPage> {
     return ScaffoldPrincipal(
       conteudo: _corpo(size),
       title: 'Esqueci minha senha',
-      rota: '',
+      rota: Routes.LOGINPAG,
     );
   }
 

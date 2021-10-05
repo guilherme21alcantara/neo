@@ -6,4 +6,6 @@ abstract class Routes
   static const HOME = '/home';
   static const PROX = '/prox';
   static const OPCAO = '/opcao';
+  static const LOGINPAG = '/loginpag';
+  static const HOMEPAG = '/homepag';
 }

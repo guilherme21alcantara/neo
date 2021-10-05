@@ -23,6 +23,7 @@ import 'package:neo/Screen/perfil/ative_localizacao.dart';
 import 'package:neo/Screen/solicitacoes/solicitacoes_page.dart';
 import 'package:neo/Screen/solicitacoes/troca_titularidade.dart';
 import 'package:neo/Screen/splash.dart';
+import 'package:neo/widgets/home_conteudo.dart';
 import 'package:neo/widgets/sucesso_page.dart';
 // ignore: import_of_legacy_library_into_null_safe
 
@@ -33,5 +34,7 @@ class AppPages {
     GetPage(name: Routes.HOME, page: () => HomePage()),
     GetPage(name: Routes.PROX, page: () => BuscarModelo()),
     GetPage(name: Routes.OPCAO, page:()=> OpcoesUsoVeiculo()),
+    GetPage(name: Routes.LOGINPAG, page:()=> LoginPage()),
+    GetPage(name: Routes.HOMEPAG, page: ()=> HomeConteudo())
       ];
 }

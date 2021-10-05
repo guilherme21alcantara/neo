@@ -1,3 +1,4 @@
+//@dart=2.9
 import 'package:flutter/material.dart';
 
 import 'package:neo/components/componentes_globais/custom_list.dart';
@@ -9,7 +10,7 @@ import 'package:neo/widgets/home_campos.dart';
 
 class HomeConteudo extends StatelessWidget {
   final Size size;
-  const HomeConteudo({Key? key, required this.size}) : super(key: key);
+  const HomeConteudo({Key key, this.size}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
