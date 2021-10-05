@@ -28,7 +28,7 @@ class _SliderBarState extends State<SliderBar> {
     var size = mediaQuery.size;
     return Container(
       color: AppCores.BRANCO,
-      height: size.height * 0.15,
+      height: size.height * 0.175,
       width: size.width * 0.9,
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: widget.size.height * 0.02),
@@ -63,7 +63,7 @@ class _SliderBarState extends State<SliderBar> {
               },
             ),
             Padding(
-              padding: EdgeInsets.only(left: widget.size.width * 0.6),
+              padding: EdgeInsets.only(left: widget.size.width * 0.6, ),
               child: 
               Row(children: 
               [
@@ -85,46 +85,6 @@ class _SliderBarState extends State<SliderBar> {
               ],),
               
             ),
-
-              Slider(
-                activeColor: AppCores.ROXOPRINCIPAL,
-                inactiveColor: AppCores.CINZA,
-                value: _currentSliderValue.toDouble(),
-                min: widget.min.toDouble(),
-                max: widget.max.toDouble(),
-                divisions: widget.divisions,
-                label: _currentSliderValue.round().toString(),
-                onChanged: (double value) {
-                  setState(() {
-                    _currentSliderValue = value.toInt();
-                  });
-                },
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(top: 5),
-                    child: Text(
-                      'R\$',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Text(
-                    _currentSliderValue.toString(),
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  SizedBox(
-                    width: size.width * 0.05,
-                  )
-                ],
-              )
           ],
 
           ),

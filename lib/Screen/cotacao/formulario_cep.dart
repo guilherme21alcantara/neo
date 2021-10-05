@@ -1,16 +1,21 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:neo/Screen/cotacao/informe_cep_faculdade.dart';
-import 'package:neo/Screen/cotacao/informe_cep_faculdade_alt.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:neo/Screen/cotacao/informe_cpf.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:neo/components/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:neo/components/componentes_globais/componentes_carrosel/container_selecionado.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:neo/components/componentes_globais/componentes_textos_header/header.dart';
 import 'package:neo/components/componentes_globais/inputs/input_dropdown.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:neo/components/componentes_globais/inputs/input_texto.dart';
 import 'package:neo/components/componentes_globais/inputs/radio_button_fino.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:neo/components/componentes_globais/inputs/text_button.dart';
 import 'package:neo/components/componentes_globais/rotas_imagens/rotas_imagens_carrosel.dart';
 
@@ -165,26 +170,28 @@ class _FormularioCEPState extends State<FormularioCEP> {
                           icon: Image.asset(RoutesImagens.BUTTON),
                           iconSize: 30,
                           onPressed: () {
-                            Get.offAll(InformeCEPFaculdade());
+                            Get.offAll(InformeCPF());
                           }),
                     ),
                   ),
                SizedBox(height: size.height * 0.01),
           Padding(
             padding: EdgeInsets.only(
-                      top: size.height * 0.03, left: size.height * 0.11),
+                      top: size.height * 0.1, left: size.height * 0.11),
             child: Container(
             height: size.height * 0.05,
             width: size.width * 0.6,
             child: Row(
               children: [
-                SizedBox(width: size.width * 0.02),
+                SizedBox(width: size.width * 0.03),
                 ContainerNaoSelect(),
-                SizedBox(width: size.width * 0.05),
+                SizedBox(width: size.width * 0.03),
                 ContainerNaoSelect(),
-                SizedBox(width: size.width * 0.05),
+                SizedBox(width: size.width * 0.03),
+                ContainerNaoSelect(),
+                SizedBox(width: size.width * 0.03),
                 ContainerSelect(cor: AppCores.ROXOPRINCIPAL),
-                SizedBox(width: size.width * 0.05),
+                SizedBox(width: size.width * 0.03),
                 ContainerNaoSelect(),
               ],
             ),

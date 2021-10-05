@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
+import 'package:neo/Routes/app_routes.dart';
 import 'package:neo/Screen/cotacao/formulario_cep.dart';
 import 'package:neo/Screen/cotacao/formulario_cep_tela.dart';
+import 'package:neo/Screen/cotacao/informe_cep_faculdade.dart';
+import 'package:neo/Screen/cotacao/informe_cep_trabalho.dart';
+import 'package:neo/Screen/cotacao/informe_cep_trabalho_alt.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/opcoes_veiculo.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 import 'package:neo/components/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
@@ -29,7 +33,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
       conteudo: _corpo(size),
-      rota: '',
+      rota: Routes.PROX,
     );
   }
 
@@ -64,6 +68,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
               onChanged: (v) {
                 setState(() {
                   selectedValue = int.parse(v.toString());
+                  Get.offAll(FormularioCep());
                 });
               },
               size: size,
@@ -74,6 +79,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
               onChanged: (v) {
                 setState(() {
                   selectedValue = int.parse(v.toString());
+                  Get.offAll(InformeCEPTrabalho());
                 });
               },
               size: size,
@@ -84,6 +90,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
               onChanged: (v) {
                 setState(() {
                   selectedValue = int.parse(v.toString());
+                  Get.offAll(InformeCEPTrabalho());
                 });
               },
               size: size,
@@ -94,6 +101,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
               onChanged: (v) {
                 setState(() {
                   selectedValue = int.parse(v.toString());
+                  Get.offAll(InformeCEPTrabalhoAlt());
                 });
               },
               size: size,
@@ -104,6 +112,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
               onChanged: (v) {
                 setState(() {
                   selectedValue = int.parse(v.toString());
+                  Get.offAll(InformeCEPTrabalhoAlt());
                 });
               },
               size: size,
@@ -114,6 +123,7 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
               onChanged: (v) {
                 setState(() {
                   selectedValue = int.parse(v.toString());
+                  Get.offAll(InformeCEPFaculdade());
                 });
               },
               size: size,
@@ -124,13 +134,14 @@ class _OpcoesUsoVeiculoState extends State<OpcoesUsoVeiculo> {
               onChanged: (v) {
                 setState(() {
                   selectedValue = int.parse(v.toString());
+                  Get.offAll(InformeCEPTrabalhoAlt());
                 });
               },
               size: size,
               text: 'Outros usos a trabalho'),
           Padding(
               padding: EdgeInsets.only(
-                  top: size.height * 0.03, left: size.height * 0.11),
+                  top: size.height * 0.03, left: size.height * 0.12),
               child: Container(
                 height: size.height * 0.05,
                 width: size.width * 0.6,

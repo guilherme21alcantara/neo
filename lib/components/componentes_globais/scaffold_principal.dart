@@ -44,6 +44,7 @@ class ScaffoldPrincipal extends StatelessWidget {
         ),
       ),
       body: conteudo,
+      //bottomNavigationBar: BottomAppBar(),
     );
   }
 }

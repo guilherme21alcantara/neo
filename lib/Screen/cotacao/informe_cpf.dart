@@ -1,8 +1,11 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:neo/Routes/app_routes.dart';
 import 'package:neo/Screen/cotacao/loading.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
+import 'package:neo/components/componentes_globais/componentes_carrosel/container_nao_selecionado.dart';
+import 'package:neo/components/componentes_globais/componentes_carrosel/container_selecionado.dart';
 import 'package:neo/components/componentes_globais/componentes_temas/cores.dart';
 import 'package:neo/components/componentes_globais/componentes_textos_header/header.dart';
 import 'package:neo/components/componentes_globais/inputs/input_texto.dart';
@@ -24,7 +27,7 @@ class _InformeCPFState extends State<InformeCPF> {
     return ScaffoldPrincipal(
       title: TITULOS.COTACAO,
       conteudo: _corpo(size),
-      rota: '',
+      rota: Routes.OPCAO,
     );
   }
 
@@ -85,6 +88,28 @@ class _InformeCPFState extends State<InformeCPF> {
                           }),
                     ),
                   ),
+                  SizedBox(height: size.height * 0.01),
+                     Padding(
+            padding: EdgeInsets.only(
+                      top: size.height * 0.55, left: size.height * 0.05),
+            child: Container(
+            height: size.height * 0.05,
+            width: size.width * 0.6,
+            child: Row(
+              children: [
+                SizedBox(width: size.width * 0.03),
+                ContainerNaoSelect(),
+                SizedBox(width: size.width * 0.03),
+                ContainerNaoSelect(),
+                SizedBox(width: size.width * 0.03),
+                ContainerNaoSelect(),
+                SizedBox(width: size.width * 0.03),
+                ContainerSelect(cor: AppCores.ROXOPRINCIPAL),
+                SizedBox(width: size.width * 0.03),
+                ContainerNaoSelect(),
+              ],
+            ),
+          ))
               ],
             )),
       )

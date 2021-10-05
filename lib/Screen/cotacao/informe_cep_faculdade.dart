@@ -1,5 +1,6 @@
 //@dart=2.9
 import 'package:flutter/material.dart';
+import 'package:neo/Routes/app_routes.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/informe_cep.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
 import 'package:neo/components/componentes_globais/scaffold_principal.dart';
@@ -27,7 +28,7 @@ class _InformeCEPFaculdadeState extends State<InformeCEPFaculdade> {
         title: INFORMECEP.FACULDADE,
         temCampoInfo: true,
       ),
-      rota: '',
+      rota: Routes.OPCAO,
     );
   }
 }

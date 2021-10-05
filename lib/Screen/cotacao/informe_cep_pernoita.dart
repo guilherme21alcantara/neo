@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neo/Routes/app_routes.dart';
 import 'package:neo/Screen/cotacao/formulario_cep.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/Cotacao/informe_cep.dart';
 import 'package:neo/Screen/texto_globais/textos_gerais/titulos/titulos.dart';
@@ -23,7 +24,7 @@ class _InformeCEPPernoitaState extends State<InformeCEPPernoita> {
         title: INFORMECEP.PERNOITA,
         temCampoInfo: true,
       ),
-      rota: '',
+      rota: Routes.OPCAO,
     );
   }
 }

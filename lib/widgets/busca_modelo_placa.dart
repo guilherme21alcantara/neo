@@ -74,12 +74,11 @@ Widget modelo(Size size) {
                   SizedBox(height: size.height * 0.01),
                   CustomDropdown(
                       size: size, text: 'Modelo', optionsList: ['optionsList']),
-                    SizedBox(height: size.height * 0.01),
                   SliderBar(
                     divisions: 50,
                     min: 22,
                     max: 50,
-                    size: size,
+                    size: size, txt: '',
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: size.width*0.75),
@@ -109,13 +108,15 @@ Widget modelo(Size size) {
             width: size.width * 0.6,
             child: Row(
               children: [
-                SizedBox(width: size.width * 0.02),
+                SizedBox(width: size.width * 0.03),
                 ContainerNaoSelect(),
-                SizedBox(width: size.width * 0.05),
+                SizedBox(width: size.width * 0.03),
+                ContainerNaoSelect(),
+                SizedBox(width: size.width * 0.03),
                 ContainerSelect(cor: AppCores.ROXOPRINCIPAL),
-                SizedBox(width: size.width * 0.05),
+                SizedBox(width: size.width * 0.03),
                 ContainerNaoSelect(),
-                SizedBox(width: size.width * 0.05),
+                SizedBox(width: size.width * 0.03),
                 ContainerNaoSelect(),
               ],
             ),
